@@ -1,182 +1,449 @@
 {
-  "appTitle": "AI de Primera Impresión",
+  "appTitle": "AI ấn tượng đầu tiên",
   "common": {
-    "loading": "Cargando..."
+    "loading": "Đang tải..."
   },
   "home": {
-    "title": "AI de Primera Impresión",
-    "subtitle": "¡Descubre tu primera impresión con solo una foto!",
-    "uploadButton": "Subir Foto"
+    "title": "AI ấn tượng đầu tiên",
+    "subtitle": "Khám phá ấn tượng đầu tiên của bạn chỉ với một bức ảnh!",
+    "uploadButton": "Tải ảnh lên"
   },
   "result": {
-    "noImageUploaded": "No se ha subido ninguna imagen.",
-    "goBackAndUpload": "Volver y subir imagen",
-    "hashtags": "#FirstLine #PrimeraImpresionIA #AIPrimeraImpresion #PruebaPerfil",
-    "shareButton": "Compartir",
-    "retryButton": "Intentar de Nuevo"
+    "noImageUploaded": "Chưa tải ảnh lên.",
+    "goBackAndUpload": "Quay lại và tải ảnh lên",
+    "hashtags": "#FirstLine #ẤnTượngĐầuTiênMộtDòng #AIẤnTượngĐầuTiên #KiểmTraẢnhĐạiDiện",
+    "shareButton": "Chia sẻ",
+    "retryButton": "Thử lại"
   },
   "share": {
-    "text": "Mi primera impresión: \"{{phrase}}\" #PrimeraImpresionIA"
+    "text": "Ấn tượng đầu tiên của tôi: \"{{phrase}}\" #ẤnTượngĐầuTiênAI"
   },
   "footer": {
-    "home": "Inicio",
-    "about": "Sobre Nosotros",
-    "privacy": "Política de Privacidad",
-    "terms": "Términos de Servicio",
-    "rightsReserved": "Todos los derechos reservados."
+    "home": "Trang chủ",
+    "about": "Giới thiệu dịch vụ",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản dịch vụ",
+    "rightsReserved": "Mọi quyền được bảo lưu."
   },
   "about": {
-    "title": "Sobre el Servicio FirstLine",
-    "paragraph1": "FirstLine es un servicio innovador que analiza tu foto usando IA para proporcionar una primera impresión en una línea. Está diseñado para ayudarte a explorar tu imagen y compartirla con amigos de una manera ligera y divertida, en lugar de para análisis o diagnósticos complejos.",
-    "paragraph2": "Iniciamos este servicio por curiosidad sobre las primeras impresiones que las personas dejan en los demás. FirstLine utiliza tecnología de IA para ayudarte a descubrir tu encanto y disfrutar entendiéndote a ti mismo desde una nueva perspectiva. Todas las frases están elaboradas para ser positivas y humorísticas, asegurando una experiencia agradable.",
-    "paragraph3": "FirstLine hará tus momentos preciosos aún más especiales y servirá como un nuevo punto de partida para conversaciones en redes sociales. ¡Descubre tu primera impresión ahora mismo!"
+    "title": "Giới thiệu dịch vụ FirstLine",
+    "paragraph1": "FirstLine là một dịch vụ sáng tạo phân tích ảnh của bạn bằng AI để đưa ra một câu nhận xét ngắn gọn về ấn tượng đầu tiên. Dịch vụ này được thiết kế để giúp bạn khám phá hình ảnh của mình và chia sẻ với bạn bè một cách nhẹ nhàng và vui vẻ, thay vì phân tích hoặc chẩn đoán phức tạp.",
+    "paragraph2": "Chúng tôi bắt đầu dịch vụ này từ sự tò mò về ấn tượng đầu tiên mà mọi người để lại cho nhau. FirstLine sử dụng công nghệ AI để giúp bạn khám phá sự quyến rũ của mình và tận hưởng niềm vui hiểu bản thân từ một góc nhìn mới. Tất cả các nhận xét được xây dựng tích cực và hài hước, đảm bảo mang lại trải nghiệm thú vị.",
+    "paragraph3": "FirstLine sẽ làm cho những khoảnh khắc quý giá của bạn trở nên đặc biệt hơn và trở thành khởi đầu cho những cuộc trò chuyện mới trên mạng xã hội. Hãy khám phá ấn tượng đầu tiên của bạn ngay bây giờ!"
   },
   "privacy": {
-    "title": "Política de Privacidad",
-    "paragraph1": "FirstLine (\"el Servicio\") cumple con las regulaciones de protección de información personal bajo las leyes relevantes, incluida la Ley de Promoción del Uso de Redes de Información y Comunicaciones y Protección de la Información, etc., y la Ley de Protección de Información Personal, y se compromete a proteger la información personal de los usuarios.",
-    "paragraph2": "Este Servicio utiliza temporalmente los datos fotográficos del usuario únicamente con fines de análisis de IA, y todos los datos se eliminan inmediatamente al finalizar el análisis sin ser almacenados. No proporcionamos datos fotográficos del usuario a terceros ni los utilizamos para ningún otro propósito sin el consentimiento del usuario.",
-    "paragraph3": "Los usuarios tienen derecho a retirar su consentimiento para el uso de sus datos fotográficos y pueden dejar de usar el servicio en cualquier momento. Para consultas, póngase en contacto con [Dirección de correo electrónico].",
-    "paragraph4": "Esta política puede cambiar de acuerdo con los cambios en las leyes y políticas, y cualquier cambio se anunciará dentro del servicio."
+    "title": "Chính sách bảo mật",
+    "paragraph1": "FirstLine (\"Dịch vụ\") tuân thủ các quy định về bảo vệ thông tin cá nhân theo các luật liên quan, bao gồm Luật xúc tiến sử dụng mạng thông tin và truyền thông và bảo vệ thông tin, v.v., và Luật bảo vệ thông tin cá nhân, đồng thời cam kết bảo vệ tối đa thông tin cá nhân của người dùng.",
+    "paragraph2": "Dịch vụ này chỉ tạm thời sử dụng dữ liệu ảnh của người dùng cho mục đích phân tích AI, và tất cả dữ liệu sẽ bị hủy ngay sau khi hoàn tất phân tích mà không được lưu trữ. Chúng tôi không cung cấp dữ liệu ảnh của người dùng cho bên thứ ba hoặc sử dụng cho bất kỳ mục đích nào khác mà không có sự đồng ý của người dùng.",
+    "paragraph3": "Người dùng có quyền rút lại sự đồng ý sử dụng dữ liệu ảnh của họ và có thể ngừng sử dụng dịch vụ bất cứ lúc nào. Mọi thắc mắc, vui lòng liên hệ [Địa chỉ Email].",
+    "paragraph4": "Chính sách này có thể thay đổi theo luật pháp và chính sách, và mọi thay đổi sẽ được thông báo trong dịch vụ."
   },
   "terms": {
-    "title": "Términos de Servicio",
-    "paragraph1": "Estos términos y condiciones (\"Términos\") tienen como objetivo definir los derechos, obligaciones, responsabilidades y otros asuntos necesarios entre la empresa y los miembros con respecto al uso de todos los servicios proporcionados por FirstLine (\"el Servicio\").",
-    "paragraph2": "El propósito del Servicio es proporcionar comentarios divertidos basados en IA sobre la primera impresión de un individuo. Todos los resultados del Servicio son únicamente para fines de entretenimiento y no pueden utilizarse como base para ningún diagnóstico o juicio.",
-    "paragraph3": "Los miembros deben utilizar todos los resultados generados por este Servicio bajo su propia responsabilidad. El Servicio no garantiza la exactitud o fiabilidad de su contenido y no es responsable de ningún daño que surja del uso del Servicio."
+    "title": "Điều khoản dịch vụ",
+    "paragraph1": "Các điều khoản và điều kiện này (\"Điều khoản\") nhằm mục đích xác định các quyền, nghĩa vụ và trách nhiệm, và các vấn đề cần thiết khác giữa công ty và các thành viên liên quan đến việc sử dụng tất cả các dịch vụ do FirstLine (\"Dịch vụ\") cung cấp.",
+    "paragraph2": "Mục đích của Dịch vụ là cung cấp các nhận xét vui vẻ dựa trên AI về ấn tượng đầu tiên của một cá nhân. Tất cả các kết quả từ Dịch vụ chỉ mang tính giải trí và không thể được sử dụng làm cơ sở cho bất kỳ chẩn đoán hoặc đánh giá nào.",
+    "paragraph3": "Thành viên phải chịu trách nhiệm về mọi kết quả phát sinh từ việc sử dụng Dịch vụ này. Dịch vụ không đảm bảo tính chính xác hoặc độ tin cậy của nội dung và không chịu trách nhiệm về bất kỳ thiệt hại nào phát sinh từ việc sử dụng Dịch vụ."
   },
   "phrases": {
     "phrase1": {
-      "core": "El tipo que naturalmente inspira confianza en un equipo",
-      "explain": "Se siente un sentido de responsabilidad y fiabilidad."
+      "core": "Kiểu người tự nhiên tạo được niềm tin trong nhóm",
+      "explain": "Cảm giác về trách nhiệm và sự đáng tin cậy được cảm nhận."
     },
     "phrase2": {
-      "core": "Alguien cuya presencia se siente incluso sin hablar",
-      "explain": "Posee una profunda sensación de confianza que llena el espacio."
+      "core": "Người mà sự hiện diện được cảm nhận ngay cả khi không nói gì",
+      "explain": "Sở hữu một cảm giác tin cậy sâu sắc lấp đầy không gian."
     },
     "phrase3": {
-      "core": "Una impresión de alguien que terminará lo que empieza",
-      "explain": "Se ve una fuerte voluntad y sinceridad en sus ojos."
+      "core": "Ấn tượng về người sẽ hoàn thành công việc được giao",
+      "explain": "Ý chí mạnh mẽ và sự chân thành được thể hiện qua ánh mắt."
     },
     "phrase4": {
-      "core": "Una cara que te hace sentir a gusto solo estando cerca",
-      "explain": "Comparte una energía tranquila y estable con los que le rodean."
+      "core": "Khuôn mặt khiến bạn cảm thấy thoải mái khi ở gần",
+      "explain": "Chia sẻ một năng lượng bình tĩnh và ổn định với những người xung quanh."
     },
     "phrase5": {
-      "core": "El tipo en quien puedes confiar en momentos críticos",
-      "explain": "Se siente una firmeza que no se tambaleará fácilmente."
+      "core": "Kiểu người bạn có thể tin cậy trong những khoảnh khắc quan trọng",
+      "explain": "Cảm nhận được sự kiên định không dễ dàng lay chuyển."
     },
     "phrase6": {
-      "core": "Callado pero que mantendrá el centro firmemente",
-      "explain": "Apoyará al equipo en silencio con una fuerza interior."
+      "core": "Yên tĩnh nhưng sẽ giữ vững trọng tâm một cách kiên định",
+      "explain": "Sẽ âm thầm hỗ trợ nhóm bằng sức mạnh nội tại."
     },
     "phrase7": {
-      "core": "Un aura de fiabilidad incluso a primera vista",
-      "explain": "Un aura honesta y recta crea esta impresión."
+      "core": "Một khí chất đáng tin cậy ngay từ cái nhìn đầu tiên",
+      "explain": "Một khí chất trung thực và chính trực tạo nên ấn tượng này."
     },
     "phrase8": {
-      "core": "Una impresión de responsabilidad natural",
-      "explain": "Porque la cautela es evidente en sus palabras y acciones."
+      "core": "Ấn tượng về một người có trách nhiệm tự nhiên",
+      "explain": "Vì sự cẩn trọng thể hiện rõ trong lời nói và hành động của họ."
     },
     "phrase9": {
-      "core": "Una cara que parece cumplir bien las promesas",
-      "explain": "Da la confianza de que definitivamente mantendrá su palabra."
+      "core": "Khuôn mặt dường như giữ lời hứa rất tốt",
+      "explain": "Tạo niềm tin rằng họ chắc chắn sẽ giữ lời."
     },
     "phrase10": {
-      "core": "El tipo que se mantiene más tranquilo en situaciones urgentes",
-      "explain": "Es probable que juzgue las situaciones de manera racional y sabia."
+      "core": "Kiểu người giữ bình tĩnh hơn trong những tình huống khẩn cấp",
+      "explain": "Có khả năng đánh giá tình huống một cách lý trí và khôn ngoan."
     },
     "phrase11": {
-      "core": "Alguien que demuestra en lugar de decir",
-      "explain": "Su fiabilidad oculta bajo el silencio es encantadora."
+      "core": "Người thể hiện bằng hành động hơn là lời nói",
+      "explain": "Sự đáng tin cậy ẩn giấu dưới sự im lặng của họ là một nét quyến rũ."
     },
     "phrase12": {
-      "core": "El tipo que se extrañaría si faltara en el equipo",
-      "explain": "Porque su presencia añade estabilidad al equipo."
+      "core": "Kiểu người sẽ bị nhớ nếu vắng mặt trong nhóm",
+      "explain": "Vì sự hiện diện của bạn mang lại sự ổn định cho nhóm."
     },
     "phrase13": {
-      "core": "Una impresión de alguien que sería un estándar cuando se necesiten decisiones",
-      "explain": "Es probable que tenga pensamientos claros y racionales."
+      "core": "Ấn tượng về người sẽ là tiêu chuẩn khi cần đưa ra quyết định",
+      "explain": "Có khả năng có những suy nghĩ rõ ràng và hợp lý."
     },
     "phrase14": {
-      "core": "Una cara que irradia energía estable",
-      "explain": "Solo estar con ellos tranquiliza el ambiente."
+      "core": "Khuôn mặt toát ra năng lượng ổn định",
+      "explain": "Chỉ cần ở bên họ cũng làm cho mọi thứ xung quanh trở nên bình tĩnh."
     },
     "phrase15": {
-      "core": "El tipo al que se le pediría consejo",
-      "explain": "Es probable que dé respuestas sabias con una profunda reflexión."
+      "core": "Kiểu người bạn sẽ tìm đến để xin lời khuyên",
+      "explain": "Có khả năng đưa ra những câu trả lời khôn ngoan với suy nghĩ sâu sắc."
     },
     "phrase16": {
-      "core": "Alguien que cuida bien a los que le rodean",
-      "explain": "Un corazón cálido y delicado se muestra en su rostro."
+      "core": "Người quan tâm tốt đến những người xung quanh",
+      "explain": "Một trái tim ấm áp và tinh tế thể hiện trên khuôn mặt của họ."
     },
     "phrase17": {
-      "core": "Un estilo de construir confianza constantemente",
-      "explain": "Alguien cuyo verdadero valor emerge con el tiempo."
+      "core": "Phong cách xây dựng niềm tin một cách vững chắc",
+      "explain": "Người có giá trị thực sự sẽ hiện rõ theo thời gian."
     },
     "phrase18": {
-      "core": "Una impresión de alguien con quien puedes sentirte seguro trabajando",
-      "explain": "Es probable que haga su parte meticulosamente y con sinceridad."
+      "core": "Ấn tượng về người bạn có thể an tâm khi làm việc cùng",
+      "explain": "Có khả năng hoàn thành phần việc của mình một cách tỉ mỉ và chân thành."
     },
     "phrase19": {
-      "core": "Tiene peso pero no es una carga",
-      "explain": "Posee un encanto que ofrece comodidad y fiabilidad."
+      "core": "Có sức nặng nhưng không gây gánh nặng",
+      "explain": "Sở hữu một nét quyến rũ mang lại cả sự thoải mái và đáng tin cậy."
     },
     "phrase20": {
-      "core": "Alguien que te hace sentir apoyado cuando está cerca",
-      "explain": "Da la confianza de que te apoyará en cualquier situación."
+      "core": "Người khiến bạn cảm thấy được hỗ trợ khi ở gần",
+      "explain": "Tạo niềm tin rằng họ sẽ ở bên bạn trong mọi tình huống."
     },
     "phrase21": {
-      "core": "Una cara a la que es fácil hablar incluso a primera vista",
-      "explain": "Una impresión cómoda y amable los hace accesibles."
+      "core": "Khuôn mặt dễ nói chuyện ngay từ cái nhìn đầu tiên",
+      "explain": "Ấn tượng thoải mái và dịu dàng khiến họ dễ tiếp cận."
     },
     "phrase22": {
-      "core": "El tipo que alegra el ambiente al sonreír al instante",
-      "explain": "Una sonrisa brillante parece hacer felices a todos los que le rodean."
+      "core": "Kiểu người làm sáng bừng không khí ngay lập tức khi cười",
+      "explain": "Một nụ cười rạng rỡ dường như làm cho mọi người xung quanh hạnh phúc."
     },
     "phrase23": {
-      "core": "Una impresión que naturalmente atrae el favor",
-      "explain": "La comodidad sin pretensiones se convierte en su encanto."
+      "core": "Ấn tượng tự nhiên thu hút sự yêu mến",
+      "explain": "Sự thoải mái không giả tạo trở thành nét quyến rũ của họ."
     },
     "phrase24": {
-      "core": "Alguien con quien parece fácil estar",
-      "explain": "Posee un aura amable que desarma a los demás."
+      "core": "Người dường như dễ ở cùng",
+      "explain": "Sở hữu một khí chất dịu dàng làm giảm bớt sự đề phòng của người khác."
     },
     "phrase25": {
-      "core": "El tipo que suaviza la atmósfera entre las personas",
-      "explain": "Se siente una energía alegre y positiva."
+      "core": "Kiểu người làm dịu đi không khí giữa mọi người",
+      "explain": "Cảm nhận được một năng lượng vui vẻ và tích cực."
     },
     "phrase26": {
-      "core": "Una cara que te hace querer mirar de nuevo",
-      "explain": "Tiene un encanto suave que llama la atención."
+      "core": "Khuôn mặt khiến bạn muốn nhìn lại lần nữa",
+      "explain": "Có một nét quyến rũ nhẹ nhàng thu hút ánh nhìn."
     },
     "phrase27": {
-      "core": "Una impresión de alguien con quien te harías amigo rápidamente",
-      "explain": "Un corazón honesto y cálido se muestra en su rostro."
+      "core": "Ấn tượng về người bạn sẽ nhanh chóng trở nên thân thiết",
+      "explain": "Một trái tim chân thành và ấm áp thể hiện trên khuôn mặt của họ."
     },
     "phrase28": {
-      "core": "El tipo que no se sentiría incómodo ni en una primera reunión",
-      "explain": "Da la sensación de que naturalmente dirigiría las conversaciones."
+      "core": "Kiểu người sẽ không cảm thấy ngại ngùng ngay cả trong lần gặp đầu tiên",
+      "explain": "Tạo cảm giác họ sẽ tự nhiên dẫn dắt các cuộc trò chuyện."
     },
     "phrase29": {
-      "core": "Una cara que parece ser buena para sentir los sentimientos de los demás",
-      "explain": "Su mirada amable y delicada es impresionante."
+      "core": "Khuôn mặt dường như giỏi nắm bắt cảm xúc của người khác",
+      "explain": "Ánh nhìn tử tế và tinh tế của họ rất ấn tượng."
     },
     "phrase30": {
-      "core": "El tipo con muchos puntos de atractivo sutiles",
-      "explain": "Cuanto más los conoces, más nuevos encantos surgen."
+      "core": "Kiểu người có nhiều điểm hấp dẫn tinh tế",
+      "explain": "Càng tìm hiểu họ, càng nhiều nét quyến rũ mới xuất hiện."
     },
     "phrase31": {
-      "core": "Alguien muy adecuado para conversaciones cómodas",
-      "explain": "Una cara que te hace querer compartir la vida diaria."
+      "core": "Người rất phù hợp cho những cuộc trò chuyện thoải mái",
+      "explain": "Một khuôn mặt khiến bạn muốn chia sẻ cuộc sống hàng ngày."
     },
     "phrase32": {
-      "core": "Una impresión de alguien con quien te reirías mucho",
-      "explain": "Llenos de energía positiva y brillante."
+      "core": "Ấn tượng về người bạn sẽ cười rất nhiều khi ở cùng",
+      "explain": "Tràn đầy năng lượng tích cực và tươi sáng."
     },
     "phrase33": {
-      "core": "El tipo que naturalmente atrae a la gente",
-      "explain": "Es probable que tenga mucha gente alrededor debido a su encanto reconfortante."
+      "core": "Kiểu người tự nhiên thu hút mọi người",
+      "explain": "Có khả năng có nhiều người xung quanh vì sự quyến rũ thoải mái của họ."
     },
     "phrase34": {
-      "core": "Una cara memorable incluso el primer día que la conoces",
-      
+      "core": "Một khuôn mặt đáng nhớ ngay cả trong ngày đầu gặp gỡ",
+      "explain": "Có một nét quyến rũ đặc biệt để lại kỷ niệm đẹp."
+    },
+    "phrase35": {
+      "core": "Người mà cuộc trò chuyện sẽ diễn ra tốt đẹp nếu ngồi cạnh",
+      "explain": "Một khuôn mặt hấp dẫn khiến bạn tò mò."
+    },
+    "phrase36": {
+      "core": "Ấn tượng về sự chu đáo tinh tế",
+      "explain": "Một trái tim ấm áp dường như được thể hiện trong mọi hành động."
+    },
+    "phrase37": {
+      "core": "Kiểu người nhanh chóng cởi mở dù ban đầu có vẻ nhút nhát",
+      "explain": "Tạo cảm giác họ sẽ mỉm cười rạng rỡ nếu được tiếp cận trước."
+    },
+    "phrase38": {
+      "core": "Một khuôn mặt giải thích lý do tại sao họ có nhiều người xung quanh",
+      "explain": "Có vẻ như họ sẽ là một người bạn tốt cho bất cứ ai."
+    },
+    "phrase39": {
+      "core": "Người có ấn tượng đầu tiên dịu dàng là một điểm mạnh",
+      "explain": "Trấn an người khác bằng một không khí ấm áp và thoải mái."
+    },
+    "phrase40": {
+      "core": "Kiểu người không khó để làm quen",
+      "explain": "Có khả năng có một tư duy cởi mở và một thái độ tích cực."
+    },
+    "phrase41": {
+      "core": "Một khuôn mặt dường như có một điểm hài hước ngay cả khi đứng yên",
+      "explain": "Khiến bạn tưởng tượng ra điều gì đó thú vị một cách tinh tế."
+    },
+    "phrase42": {
+      "core": "Kiểu người bất ngờ hài hước khi bạn quen biết họ",
+      "explain": "Một khiếu hài hước dường như ẩn giấu sau một vẻ mặt nghiêm túc."
+    },
+    "phrase43": {
+      "core": "Người có ấn tượng đầu tiên và thực tế dường như khác nhau",
+      "explain": "Càng tìm hiểu họ, bạn càng mong đợi những khía cạnh mới."
+    },
+    "phrase44": {
+      "core": "Ấn tượng về người bí mật hài hước ngay cả với khuôn mặt nghiêm nghị",
+      "explain": "Tò mò về nét quyến rũ bất ngờ ngoài vẻ mặt sang chảnh."
+    },
+    "phrase45": {
+      "core": "Kiểu người tung ra một câu đùa vào một thời điểm bất ngờ",
+      "explain": "Dường như có khả năng nói điều gì đó có tác động sau khi im lặng."
+    },
+    "phrase46": {
+      "core": "Một khuôn mặt dường như có khả năng đưa ra những nhận xét dí dỏm dù có vẻ ít nói",
+      "explain": "Tạo cảm giác họ sẽ sử dụng sự hài hước sắc bén."
+    },
+    "phrase47": {
+      "core": "Kiểu người bạn nghĩ là nghiêm túc nhưng lại có một sự thay đổi",
+      "explain": "Có khả năng có sự vụng về bất ngờ hoặc khiếu hài hước."
+    },
+    "phrase48": {
+      "core": "Người có thể đang giấu một 'nút cười'",
+      "explain": "Dường như có khả năng gây ra tiếng cười không kiểm soát được một khi nó bắt đầu."
+    },
+    "phrase49": {
+      "core": "Ấn tượng về người mà tâm trạng sẽ thay đổi khi họ cảm thấy thoải mái",
+      "explain": "Một khi sự nhút nhát biến mất, họ sẽ trở thành tâm điểm của bữa tiệc."
+    },
+    "phrase50": {
+      "core": "Kiểu người tinh tế đưa ra những nhận xét hài hước",
+      "explain": "Cách họ nói đùa một cách tự nhiên dường như rất duyên dáng."
+    },
+    "phrase51": {
+      "core": "Người mà sự quyến rũ càng tăng lên khi bạn càng gần gũi",
+      "explain": "Có nhiều khía cạnh đa dạng hơn so với ấn tượng đầu tiên."
+    },
+    "phrase52": {
+      "core": "Kiểu người sẽ được nhớ rất lâu sau khi làm bạn cười một lần",
+      "explain": "Để lại ấn tượng mạnh mẽ với sự hài hước độc đáo."
+    },
+    "phrase53": {
+      "core": "Một khuôn mặt dường như có tính cách thoải mái hơn nhiều so với dự kiến",
+      "explain": "Có khả năng cởi mở và vui vẻ hơn vẻ bề ngoài."
+    },
+    "phrase54": {
+      "core": "Ấn tượng sẽ được nhớ đến vì nét quyến rũ bất ngờ",
+      "explain": "Bản chất không thể đoán trước của họ khiến bạn tò mò hơn."
+    },
+    "phrase55": {
+      "core": "Kiểu người trông nghiêm túc nhưng lại hài hước hơn vì điều đó",
+      "explain": "Những câu đùa với khuôn mặt nghiêm túc có lẽ là đòn sát thủ của họ."
+    },
+    "phrase56": {
+      "core": "Người có thể vụng về ẩn dưới bề ngoài hoàn hảo",
+      "explain": "Đằng sau vẻ ngoài hoàn hảo của họ là nét quyến rũ của con người."
+    },
+    "phrase57": {
+      "core": "Một khuôn mặt dường như thay đổi không khí khi họ nói",
+      "explain": "Dường như mỗi lời nói sẽ thu hút sự chú ý."
+    },
+    "phrase58": {
+      "core": "Kiểu người có khiếu hài hước tinh tế phù hợp",
+      "explain": "Dường như bạn sẽ tiếp tục cười mỗi khi ở bên nhau."
+    },
+    "phrase59": {
+      "core": "Có khả năng làm chủ cuộc trò chuyện nhóm khi đã thân thiết",
+      "explain": "Sẽ dẫn dắt các cuộc trò chuyện bằng những nhận xét dí dỏm."
+    },
+    "phrase60": {
+      "core": "Ấn tượng nơi những thay đổi bất ngờ yên tĩnh được dự đoán",
+      "explain": "Tò mò về sự hài hước dễ chịu ẩn giấu dưới vẻ ngoài bình tĩnh."
+    },
+    "phrase61": {
+      "core": "Kiểu người có vẻ có năng lực mà không cần nói một lời",
+      "explain": "Năng lực được cảm nhận qua ánh mắt và thái độ tự tin của họ."
+    },
+    "phrase62": {
+      "core": "Một khuôn mặt dường như sắp xếp mọi tình huống từ trung tâm",
+      "explain": "Có khả năng giải quyết các vấn đề phức tạp bằng óc phán đoán nhạy bén."
+    },
+    "phrase63": {
+      "core": "Ấn tượng về sự chuyên nghiệp ngay từ cái nhìn đầu tiên",
+      "explain": "Sự tự tin và niềm tự hào trong lĩnh vực của họ là rõ ràng."
+    },
+    "phrase64": {
+      "core": "Người rất phù hợp với các vị trí có trách nhiệm",
+      "explain": "Có vẻ như họ sẽ lãnh đạo một nhóm tốt với khả năng lãnh đạo bẩm sinh."
+    },
+    "phrase65": {
+      "core": "Kiểu người không dễ dàng lay chuyển",
+      "explain": "Sở hữu một sự kiên định không mất bình tĩnh trong bất kỳ cuộc khủng hoán nào."
+    },
+    "phrase66": {
+      "core": "Một khuôn mặt dường như cẩn trọng khi đưa ra quyết định",
+      "explain": "Có khả năng ưu tiên dữ liệu và logic hơn cảm xúc."
+    },
+    "phrase67": {
+      "core": "Ấn tượng nơi khả năng lãnh đạo đến một cách tự nhiên",
+      "explain": "Cảm nhận được sức mạnh để dẫn dắt mọi người hướng tới mục tiêu."
+    },
+    "phrase68": {
+      "core": "Kiểu người có hình ảnh mạnh mẽ về việc làm tốt công việc",
+      "explain": "Một không khí tỉ mị và thông minh rất ấn tượng."
+    },
+    "phrase69": {
+      "core": "Người khác sẽ tin tưởng và giao phó nhiệm vụ",
+      "explain": "Tạo niềm tin rằng công việc của họ sẽ gọn gàng và chính xác."
+    },
+    "phrase70": {
+      "core": "Một khuôn mặt dường như đưa ra những đánh giá tốt trong những khoảnh khắc quan trọng",
+      "explain": "Có khả năng xuyên thủng cốt lõi bằng cái nhìn sâu sắc."
+    },
+    "phrase71": {
+      "core": "Kiểu người thể hiện kết quả hơn là lời nói",
+      "explain": "Người chứng minh giá trị của mình thông qua khả năng."
+    },
+    "phrase72": {
+      "core": "Ấn tượng về một sự hiện diện quan trọng",
+      "explain": "Thái độ nghiêm túc xây dựng niềm tin sâu sắc."
+    },
+    "phrase73": {
+      "core": "Người dường như đảm nhận vai trò trung tâm trong một tổ chức",
+      "explain": "Sẽ được công nhận ở bất cứ đâu vì khả năng bẩm sinh của họ."
+    },
+    "phrase74": {
+      "core": "Một khuôn mặt tinh tế toát lên vẻ chuyên nghiệp",
+      "explain": "Sở hữu một khí chất của người chuyên sâu trong một lĩnh vực."
+    },
+    "phrase75": {
+      "core": "Có vẻ là người biết cách chịu trách nhiệm",
+      "explain": "Có khả năng chịu hoàn toàn trách nhiệm về các quyết định và hành động của họ."
+    },
+    "phrase76": {
+      "core": "Kiểu người có thể chủ động trong các tình huống",
+      "explain": "Sở hữu sức mạnh để thuyết phục mọi người bằng một tầm nhìn rõ ràng."
+    },
+    "phrase77": {
+      "core": "Ấn tượng về sự ảnh hưởng ngay cả với ít lời nói",
+      "explain": "Mỗi lời nói dường như đều có sức nặng."
+    },
+    "phrase78": {
+      "core": "Một khuôn mặt nơi sự tin cậy và năng lực được cảm nhận cùng nhau",
+      "explain": "Dường như là người có cả khả năng và tính cách."
+    },
+    "phrase79": {
+      "core": "Người bạn có thể giao phó những nhiệm vụ quan trọng",
+      "explain": "Có khả năng mang lại kết quả vượt ngoài mong đợi."
+    },
+    "phrase80": {
+      "core": "Kiểu người có khí chất chuyên nghiệp là một điểm mạnh",
+      "explain": "Quản lý bản thân tỉ mị và chân thành trong mọi việc."
+    },
+    "phrase81": {
+      "core": "Khuôn mặt thể hiện sự chu đáo ngay cả khi không nói gì",
+      "explain": "Sự tử tế toát ra từ ánh mắt và biểu cảm ấm áp của họ."
+    },
+    "phrase82": {
+      "core": "Kiểu người lắng nghe tốt câu chuyện của người khác",
+      "explain": "Có khả năng đồng cảm chân thành và lắng nghe chăm chú."
+    },
+    "phrase83": {
+      "core": "Ấn tượng khiến bạn cảm thấy thư giãn khi ở gần",
+      "explain": "Một năng lượng thoải mái và dịu dàng bao quanh họ."
+    },
+    "phrase84": {
+      "core": "Người đồng cảm tốt với cảm xúc",
+      "explain": "Sẽ tinh tế đọc và an ủi cảm xúc của người khác."
+    },
+    "phrase85": {
+      "core": "Khuôn mặt mang lại sự an ủi khi ở gần",
+      "explain": "Sở hữu một sự ấm áp mang lại sức mạnh chỉ bằng sự hiện diện của họ."
+    },
+    "phrase86": {
+      "core": "Kiểu người tỏa ra năng lượng dịu dàng",
+      "explain": "Tạo ra một bầu không khí yên bình cho những người xung quanh bằng thái độ nhẹ nhàng của họ."
+    },
+    "phrase87": {
+      "core": "Ấn tượng khiến mọi người cảm thấy thoải mái",
+      "explain": "Có một sức mạnh đặc biệt khiến người khác tiếp cận mà không ngần ngại."
+    },
+    "phrase88": {
+      "core": "Một khuôn mặt dường như mang đến những lời an ủi ấm áp",
+      "explain": "Có khả năng mang lại sự an ủi tử tế ngay cả trong những khoảnh khắc nhỏ."
+    },
+    "phrase89": {
+      "core": "Người quan tâm tốt đến những người xung quanh",
+      "explain": "Sẽ tỉ mị chăm sóc các nhu cầu bằng sự quan sát nhạy bén."
+    },
+    "phrase90": {
+      "core": "Kiểu người có biểu cảm cảm xúc tinh tế",
+      "explain": "Có khả năng nhìn thế giới phong phú với sự nhạy cảm dồi dào."
+    },
+    "phrase91": {
+      "core": "Ấn tượng về người đặc biệt tốt với những người thân thiết",
+      "explain": "Người sẽ cho đi tất cả một khi họ mở lòng."
+    },
+    "phrase92": {
+      "core": "Một khuôn mặt nơi sự chân thành được cảm nhận trong từng lời nói",
+      "explain": "Vẻ ngoài giản dị và chân thật của họ để lại ấn tượng sâu sắc."
+    },
+    "phrase93": {
+      "core": "Kiểu người âm thầm an ủi",
+      "explain": "Sẽ nhẹ nhàng ôm lấy trái tim, âm thầm ở bên mà không ồn ào."
+    },
+    "phrase94": {
+      "core": "Ấn tượng mang lại sự ổn định khi ở bên nhau",
+      "explain": "Sở hữu sức mạnh làm dịu đi ngay cả những cảm xúc phức tạp."
+    },
+    "phrase95": {
+      "core": "Một khuôn mặt dường như coi trọng mọi người",
+      "explain": "Có khả năng đối xử với tất cả các mối quan hệ bằng sự chân thành."
+    },
+    "phrase96": {
+      "core": "Kiểu người có khả năng đồng cảm cảm성",
+      "explain": "Có khả năng sở hữu sự nhạy감 예술과 깊은 공감대."
+    },
+    "phrase97": {
+      "core": "Người âm thầm ủng hộ từ bên cạnh",
+      "explain": "Một đồng minh đáng tin cậy luôn tin tưởng và ủng hộ mọi lựa chọn của bạn."
+    },
+    "phrase98": {
+      "core": "Ấn tượng về sự ấm áp thoải mái",
+      "explain": "Sở hữu một sự ấm áp cân bằng hoàn hảo, không quá nóng cũng không quá lạnh."
+    },
+    "phrase99": {
+      "core": "Kiểu người dường như xử lý tốt các biến động cảm xúc",
+      "explain": "Sẽ ôm lấy tất cả cảm xúc bằng một tâm hồn rộng mở."
+    },
+    "phrase100": {
+      "core": "Kiểu người càng quen càng trở nên ấm áp",
+      "explain": "Sự chân thành và ấm áp sâu sắc hơn theo thời gian."
+    }
+  }
+}
