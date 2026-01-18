@@ -9,6 +9,7 @@ const Footer = () => {
   return (
     <footer className="app-footer">
       <nav className="footer-nav">
+        <Link to="/" className="footer-link">{t('footer.home')}</Link>
         <Link to="/about" className="footer-link">{t('footer.about')}</Link>
         <Link to="/privacy" className="footer-link">{t('footer.privacy')}</Link>
         <Link to="/terms" className="footer-link">{t('footer.terms')}</Link>
