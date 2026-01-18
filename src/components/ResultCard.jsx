@@ -7,7 +7,8 @@ import './ResultCard.css';
 const ResultCard = ({ image, onRetry }) => {
   const { t } = useTranslation();
   const [selectedPhraseId, setSelectedPhraseId] = useState(null);
-  const cardRef = useRef(null); // Ref to the card element
+  const cardRef = useRef(null); // Ref to the outer card element for general styling
+  const contentToCaptureRef = useRef(null); // New ref for the content to be captured
 
   useEffect(() => {
     // Select a random phrase meta object when the component mounts
@@ -16,12 +17,12 @@ const ResultCard = ({ image, onRetry }) => {
   }, []);
 
   const handleDownloadImage = () => {
-    if (cardRef.current) {
-      html2canvas(cardRef.current, {
+    if (contentToCaptureRef.current) {
+      html2canvas(contentToCaptureRef.current, { // Target the contentToCaptureRef
         useCORS: true, // Important for images loaded from different origins
         // You might need to set windowWidth and windowHeight if your card is responsive
-        // width: cardRef.current.offsetWidth,
-        // height: cardRef.current.offsetHeight,
+        // width: contentToCaptureRef.current.offsetWidth,
+        // height: contentToCaptureRef.current.offsetHeight,
       }).then(canvas => {
         const link = document.createElement('a');
         link.download = 'firstline_impression.png';
@@ -37,17 +38,19 @@ const ResultCard = ({ image, onRetry }) => {
 
   return (
     <div className="card-container">
-      <div className="card" ref={cardRef}> {/* Attach ref to the card */}
-        <div className="image-wrapper">
-          <img src={image} alt="User" className="user-image" />
+      <div className="card" ref={cardRef}>
+        <div ref={contentToCaptureRef} className="content-to-capture"> {/* Wrap desired content */}
+          <div className="image-wrapper">
+            <img src={image} alt="User" className="user-image" />
+          </div>
+          <h2 className="core-phrase">{t(`phrases.${selectedPhraseId}.core`)}</h2>
+          <p className="explain-phrase">▶ {t(`phrases.${selectedPhraseId}.explain`)}</p>
         </div>
-        <h2 className="core-phrase">{t(`phrases.${selectedPhraseId}.core`)}</h2>
-        <p className="explain-phrase">▶ {t(`phrases.${selectedPhraseId}.explain`)}</p>
         <div className="card-footer">
           <span className="hashtags">{t('result.hashtags')}</span>
           <div className="button-group">
             <button className="share-button" onClick={handleDownloadImage}>
-              {t('result.saveImageButton')} {/* New translation key */}
+              {t('result.saveImageButton')}
             </button>
             <button className="retry-button" onClick={onRetry}>
               {t('result.retryButton')}
