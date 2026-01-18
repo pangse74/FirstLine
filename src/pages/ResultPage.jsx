@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import ResultCard from '../components/ResultCard';
 
 const ResultPage = ({ image, setImage }) => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const handleRetry = () => {
@@ -13,8 +15,8 @@ const ResultPage = ({ image, setImage }) => {
   if (!image) {
     return (
       <div style={{ textAlign: 'center', marginTop: '50px' }}>
-        <h2>No image uploaded.</h2>
-        <Link to="/">Go back and upload</Link>
+        <h2>{t('result.noImageUploaded')}</h2>
+        <Link to="/">{t('result.goBackAndUpload')}</Link>
       </div>
     );
   }

@@ -1,0 +1,419 @@
+{
+  "common": {
+    "loading": "Cargando..."
+  },
+  "home": {
+    "title": "AI de Primera Impresión",
+    "subtitle": "¡Descubre tu primera impresión con solo una foto!",
+    "uploadButton": "Subir Foto"
+  },
+  "result": {
+    "noImageUploaded": "No se ha subido ninguna imagen.",
+    "goBackAndUpload": "Volver y subir imagen",
+    "hashtags": "#PrimeraImpresion #OpinionIA #FaceCaption",
+    "shareButton": "Compartir",
+    "retryButton": "Intentar de Nuevo"
+  },
+  "phrases": {
+    "phrase1": {
+      "core": "El tipo que naturalmente inspira confianza en un equipo",
+      "explain": "Se siente un sentido de responsabilidad y fiabilidad."
+    },
+    "phrase2": {
+      "core": "Alguien cuya presencia se siente incluso sin hablar",
+      "explain": "Posee una profunda sensación de confianza que llena el espacio."
+    },
+    "phrase3": {
+      "core": "Una impresión de alguien que terminará lo que empieza",
+      "explain": "Se ve una fuerte voluntad y sinceridad en sus ojos."
+    },
+    "phrase4": {
+      "core": "Una cara que te hace sentir a gusto solo estando cerca",
+      "explain": "Comparte una energía tranquila y estable con los que le rodean."
+    },
+    "phrase5": {
+      "core": "El tipo en quien puedes confiar en momentos críticos",
+      "explain": "Se siente una firmeza que no se tambaleará fácilmente."
+    },
+    "phrase6": {
+      "core": "Callado pero que mantendrá el centro firmemente",
+      "explain": "Apoyará al equipo en silencio con una fuerza interior."
+    },
+    "phrase7": {
+      "core": "Un aura de fiabilidad incluso a primera vista",
+      "explain": "Un aura honesta y recta crea esta impresión."
+    },
+    "phrase8": {
+      "core": "Una impresión de responsabilidad natural",
+      "explain": "Porque la cautela es evidente en sus palabras y acciones."
+    },
+    "phrase9": {
+      "core": "Una cara que parece cumplir bien las promesas",
+      "explain": "Da la confianza de que definitivamente mantendrá su palabra."
+    },
+    "phrase10": {
+      "core": "El tipo que se mantiene más tranquilo en situaciones urgentes",
+      "explain": "Es probable que juzgue las situaciones de manera racional y sabia."
+    },
+    "phrase11": {
+      "core": "Alguien que demuestra en lugar de decir",
+      "explain": "Su fiabilidad oculta bajo el silencio es encantadora."
+    },
+    "phrase12": {
+      "core": "El tipo que se extrañaría si faltara en el equipo",
+      "explain": "Porque su presencia añade estabilidad al equipo."
+    },
+    "phrase13": {
+      "core": "Una impresión de alguien que sería un estándar cuando se necesiten decisiones",
+      "explain": "Es probable que tenga pensamientos claros y racionales."
+    },
+    "phrase14": {
+      "core": "Una cara que irradia energía estable",
+      "explain": "Solo estar con ellos tranquiliza el ambiente."
+    },
+    "phrase15": {
+      "core": "El tipo al que se le pediría consejo",
+      "explain": "Es probable que dé respuestas sabias con una profunda reflexión."
+    },
+    "phrase16": {
+      "core": "Alguien que cuida bien a los que le rodean",
+      "explain": "Un corazón cálido y delicado se muestra en su rostro."
+    },
+    "phrase17": {
+      "core": "Un estilo de construir confianza constantemente",
+      "explain": "Alguien cuyo verdadero valor emerge con el tiempo."
+    },
+    "phrase18": {
+      "core": "Una impresión de alguien con quien puedes sentirte seguro trabajando",
+      "explain": "Es probable que haga su parte meticulosamente y con sinceridad."
+    },
+    "phrase19": {
+      "core": "Tiene peso pero no es una carga",
+      "explain": "Posee un encanto que ofrece comodidad y fiabilidad."
+    },
+    "phrase20": {
+      "core": "Alguien que te hace sentir apoyado cuando está cerca",
+      "explain": "Da la confianza de que te apoyará en cualquier situación."
+    },
+    "phrase21": {
+      "core": "Una cara a la que es fácil hablar incluso a primera vista",
+      "explain": "Una impresión cómoda y amable los hace accesibles."
+    },
+    "phrase22": {
+      "core": "El tipo que alegra el ambiente al sonreír al instante",
+      "explain": "Una sonrisa brillante parece hacer felices a todos los que le rodean."
+    },
+    "phrase23": {
+      "core": "Una impresión que naturalmente atrae el favor",
+      "explain": "La comodidad sin pretensiones se convierte en su encanto."
+    },
+    "phrase24": {
+      "core": "Alguien con quien parece fácil estar",
+      "explain": "Posee un aura amable que desarma a los demás."
+    },
+    "phrase25": {
+      "core": "El tipo que suaviza la atmósfera entre las personas",
+      "explain": "Se siente una energía alegre y positiva."
+    },
+    "phrase26": {
+      "core": "Una cara que te hace querer mirar de nuevo",
+      "explain": "Tiene un encanto suave que llama la atención."
+    },
+    "phrase27": {
+      "core": "Una impresión de alguien con quien te harías amigo rápidamente",
+      "explain": "Un corazón honesto y cálido se muestra en su rostro."
+    },
+    "phrase28": {
+      "core": "El tipo que no se sentiría incómodo ni en una primera reunión",
+      "explain": "Da la sensación de que naturalmente dirigiría las conversaciones."
+    },
+    "phrase29": {
+      "core": "Una cara que parece ser buena para sentir los sentimientos de los demás",
+      "explain": "Su mirada amable y delicada es impresionante."
+    },
+    "phrase30": {
+      "core": "El tipo con muchos puntos de atractivo sutiles",
+      "explain": "Cuanto más los conoces, más nuevos encantos surgen."
+    },
+    "phrase31": {
+      "core": "Alguien muy adecuado para conversaciones cómodas",
+      "explain": "Una cara que te hace querer compartir la vida diaria."
+    },
+    "phrase32": {
+      "core": "Una impresión de alguien con quien te reirías mucho",
+      "explain": "Llenos de energía positiva y brillante."
+    },
+    "phrase33": {
+      "core": "El tipo que naturalmente atrae a la gente",
+      "explain": "Es probable que tenga mucha gente alrededor debido a su encanto reconfortante."
+    },
+    "phrase34": {
+      "core": "Una cara memorable incluso el primer día que la conoces",
+      "explain": "Tiene un encanto especial que deja un buen recuerdo."
+    },
+    "phrase35": {
+      "core": "Alguien con quien la conversación fluiría bien si se sentara a su lado",
+      "explain": "Una cara atractiva que te da curiosidad."
+    },
+    "phrase36": {
+      "core": "Una impresión de sutil consideración",
+      "explain": "Un corazón cálido parece estar incrustado en cada acción."
+    },
+    "phrase37": {
+      "core": "El tipo que se abre rápidamente aunque al principio sea tímido",
+      "explain": "Da la sensación de que sonreiría brillantemente si se le acercaran primero."
+    },
+    "phrase38": {
+      "core": "Una cara que explica por qué tienen tanta gente alrededor",
+      "explain": "Parece que serían buenos amigos para cualquiera."
+    },
+    "phrase39": {
+      "core": "Alguien cuya suave primera impresión es una fortaleza",
+      "explain": "Tranquiliza a los demás con una atmósfera cálida y cómoda."
+    },
+    "phrase40": {
+      "core": "El tipo al que no es difícil acercarse",
+      "explain": "Es probable que tenga una mente abierta y una actitud positiva."
+    },
+    "phrase41": {
+      "core": "Una cara que parece tener un punto humorístico incluso cuando está quieta",
+      "explain": "Te hace imaginar algo divertido de una manera sutil."
+    },
+    "phrase42": {
+      "core": "El tipo que es inesperadamente divertido una vez que lo conoces",
+      "explain": "Un sentido del humor parece escondido detrás de una expresión seria."
+    },
+    "phrase43": {
+      "core": "Alguien cuya primera impresión y realidad parecen diferentes",
+      "explain": "Cuanto más los conoces, más nuevos lados esperas."
+    },
+    "phrase44": {
+      "core": "Una impresión de alguien secretamente divertido incluso con cara seria",
+      "explain": "Curiosidad por el encanto inesperado más allá de una expresión chic."
+    },
+    "phrase45": {
+      "core": "El tipo que suelta un chiste en un momento inesperado",
+      "explain": "Parece probable que diga algo impactante después de estar en silencio."
+    },
+    "phrase46": {
+      "core": "Una cara que parece capaz de hacer comentarios ingeniosos a pesar de parecer callada",
+      "explain": "Da la sensación de que usaría un humor incisivo."
+    },
+    "phrase47": {
+      "core": "El tipo que pensabas que era serio pero tiene un giro",
+      "explain": "Es probable que tenga una torpeza inesperada o un sentido del humor cómico."
+    },
+    "phrase48": {
+      "core": "Alguien que podría estar escondiendo un 'botón de la risa'",
+      "explain": "Parece capaz de provocar risas incontrolables una vez que empieza."
+    },
+    "phrase49": {
+      "core": "Una impresión de alguien cuyo humor cambiaría una vez que se sintiera cómodo",
+      "explain": "Una vez que la timidez se desvanece, se convertirán en el alma de la fiesta."
+    },
+    "phrase50": {
+      "core": "El tipo que sutilmente suelta comentarios divertidos",
+      "explain": "Su entrega casual de chistes parece encantadora."
+    },
+    "phrase51": {
+      "core": "Alguien cuyo encanto crece cuanto más te acercas",
+      "explain": "Tiene más lados diversos de lo que sugiere su primera impresión."
+    },
+    "phrase52": {
+      "core": "El tipo que será recordado mucho después de hacerte reír una vez",
+      "explain": "Deja una fuerte impresión con un humor único."
+    },
+    "phrase53": {
+      "core": "Una cara que parece tener una personalidad mucho más relajada de lo esperado",
+      "explain": "Es probable que sea más abierto y alegre de lo que parece."
+    },
+    "phrase54": {
+      "core": "Una impresión que será recordada por su encanto inesperado",
+      "explain": "Su naturaleza impredecible te hace sentir más curiosidad."
+    },
+    "phrase55": {
+      "core": "El tipo que parece serio pero es más divertido por eso",
+      "explain": "Los chistes con cara seria son probablemente su movimiento estrella."
+    },
+    "phrase56": {
+      "core": "Alguien que podría ser torpe en el fondo",
+      "explain": "Detrás de su apariencia perfecta se esconde un encanto humano."
+    },
+    "phrase57": {
+      "core": "Una cara que parece cambiar el ambiente cuando habla",
+      "explain": "Parece que cada palabra atraería la atención."
+    },
+    "phrase58": {
+      "core": "El tipo cuyo sentido del humor encaja sutilmente bien",
+      "explain": "Parece que seguirías riendo cada vez que estéis juntos."
+    },
+    "phrase59": {
+      "core": "Probablemente animará el chat de grupo una vez que haya confianza",
+      "explain": "Liderará las conversaciones con comentarios ingeniosos."
+    },
+    "phrase60": {
+      "core": "Una impresión donde se anticipan giros tranquilos",
+      "explain": "Curiosidad por el humor agradable escondido bajo un exterior tranquilo."
+    },
+    "phrase61": {
+      "core": "El tipo que parece competente sin decir una palabra",
+      "explain": "La competencia se siente en sus ojos y actitud confiados."
+    },
+    "phrase62": {
+      "core": "Una cara que parece poner orden en las situaciones desde el centro",
+      "explain": "Es probable que resuelva problemas complejos con un juicio agudo."
+    },
+    "phrase63": {
+      "core": "Una impresión de profesionalidad incluso a primera vista",
+      "explain": "Se evidencia confianza y orgullo en su campo."
+    },
+    "phrase64": {
+      "core": "Alguien muy adecuado para puestos de responsabilidad",
+      "explain": "Parece que lideraría bien un equipo con un liderazgo natural."
+    },
+    "phrase65": {
+      "core": "El tipo que no se tambaleará fácilmente",
+      "explain": "Posee una firmeza que no perderá la compostura en ninguna crisis."
+    },
+    "phrase66": {
+      "core": "Una cara que parece cautelosa al tomar decisiones",
+      "explain": "Es probable que priorice los datos y la lógica sobre la emoción."
+    },
+    "phrase67": {
+      "core": "Una impresión donde el liderazgo surge naturalmente",
+      "explain": "Se siente el poder de guiar a las personas hacia sus metas."
+    },
+    "phrase68": {
+      "core": "El tipo con una fuerte imagen de ser bueno en el trabajo",
+      "explain": "Una atmósfera minuciosa e inteligente es impresionante."
+    },
+    "phrase69": {
+      "core": "Alguien en quien los demás confiarían y le encargarían tareas",
+      "explain": "Da la confianza de que su trabajo será limpio y preciso."
+    },
+    "phrase70": {
+      "core": "Una cara que parece tomar buenas decisiones en momentos críticos",
+      "explain": "Es probable que atraviese el núcleo con una perspicacia aguda."
+    },
+    "phrase71": {
+      "core": "El tipo que muestra resultados en lugar de palabras",
+      "explain": "Alguien que demuestra su valía a través de su capacidad."
+    },
+    "phrase72": {
+      "core": "Una impresión de una presencia importante",
+      "explain": "Un comportamiento serio genera una profunda confianza."
+    },
+    "phrase73": {
+      "core": "Alguien que parece asumir roles centrales en una organización",
+      "explain": "Será reconocido en cualquier lugar por sus capacidades inherentes."
+    },
+    "phrase74": {
+      "core": "Una cara que sutilmente desprende un ambiente profesional",
+      "explain": "Posee un aura de alguien profundamente especializado en un campo."
+    },
+    "phrase75": {
+      "core": "Parece alguien que sabe asumir responsabilidades",
+      "explain": "Es probable que asuma toda la responsabilidad por sus decisiones y acciones."
+    },
+    "phrase76": {
+      "core": "El tipo que puede tomar la iniciativa en las situaciones",
+      "explain": "Posee el poder de persuadir a la gente con una visión clara."
+    },
+    "phrase77": {
+      "core": "Una impresión de influencia incluso con pocas palabras",
+      "explain": "Cada palabra dicha parece tener peso."
+    },
+    "phrase78": {
+      "core": "Una cara donde la confianza y la competencia se sienten juntas",
+      "explain": "Parece ser alguien con habilidad y carácter."
+    },
+    "phrase79": {
+      "core": "Alguien a quien se le podrían confiar tareas importantes",
+      "explain": "Es probable que ofrezca resultados más allá de las expectativas."
+    },
+    "phrase80": {
+      "core": "El tipo cuya aura profesional es una fortaleza",
+      "explain": "Se gestiona meticulosamente y es sincero en todo."
+    },
+    "phrase81": {
+      "core": "Una cara que muestra consideración incluso sin palabras",
+      "explain": "La amabilidad emana de su cálida mirada y expresión."
+    },
+    "phrase82": {
+      "core": "El tipo que escucha bien las historias de los demás",
+      "explain": "Es probable que empatice sinceramente y escuche atentamente."
+    },
+    "phrase83": {
+      "core": "Una impresión que te hace sentir relajado cuando estás cerca",
+      "explain": "Una energía cómoda y suave les rodea."
+    },
+    "phrase84": {
+      "core": "Alguien que empatiza bien con las emociones",
+      "explain": "Leerá delicadamente y consolará los sentimientos de los demás."
+    },
+    "phrase85": {
+      "core": "Una cara que ofrece consuelo cuando está cerca",
+      "explain": "Posee una calidez que da fuerza solo con su presencia."
+    },
+    "phrase86": {
+      "core": "El tipo que irradia una energía suave",
+      "explain": "Crea una atmósfera tranquila para los que le rodean con su comportamiento apacible."
+    },
+    "phrase87": {
+      "core": "Una impresión que tranquiliza a la gente",
+      "explain": "Tiene un poder especial que hace que los demás se acerquen sin dudarlo."
+    },
+    "phrase88": {
+      "core": "Una cara que parece ofrecer cálidas palabras de consuelo",
+      "explain": "Es probable que ofrezca un amable consuelo incluso en pequeños momentos."
+    },
+    "phrase89": {
+      "core": "Alguien que cuida bien a los que le rodean",
+      "explain": "Se ocupará meticulosamente de las necesidades con una aguda observación."
+    },
+    "phrase90": {
+      "core": "El tipo con expresiones emocionales delicadas",
+      "explain": "Es probable que vea el mundo ricamente con una sensibilidad abundante."
+    },
+    "phrase91": {
+      "core": "Una impresión de alguien especialmente bueno con los cercanos",
+      "explain": "Alguien que lo dará todo una vez que abra su corazón."
+    },
+    "phrase92": {
+      "core": "Una cara donde la sinceridad se siente en cada palabra",
+      "explain": "Su apariencia sencilla y genuina deja una profunda resonancia."
+    },
+    "phrase93": {
+      "core": "El tipo que ofrece consuelo en silencio",
+      "explain": "Abrazará suavemente los corazones, manteniéndose en silencio sin alboroto."
+    },
+    "phrase94": {
+      "core": "Una impresión que aporta estabilidad cuando se está juntos",
+      "explain": "Posee el poder de calmar incluso los sentimientos complejos."
+    },
+    "phrase95": {
+      "core": "Una cara que parece valorar a la gente",
+      "explain": "Es probable que trate todas las relaciones con sinceridad."
+    },
+    "phrase96": {
+      "core": "El tipo con empatía emocional",
+      "explain": "Es probable que posea sensibilidad artística y una profunda empatía."
+    },
+    "phrase97": {
+      "core": "Alguien que apoya en silencio desde un lado",
+      "explain": "Un aliado fiable que confía y apoya cualquier elección que hagas."
+    },
+    "phrase98": {
+      "core": "Una impresión de calidez confortable",
+      "explain": "Posee una calidez perfectamente equilibrada, ni demasiado caliente ni demasiado fría."
+    },
+    "phrase99": {
+      "core": "Una cara que parece manejar bien las fluctuaciones emocionales",
+      "explain": "Abrazará todas las emociones con una mente abierta."
+    },
+    "phrase100": {
+      "core": "El tipo que se vuelve más cálido cuanto más lo conoces",
+      "explain": "La sinceridad y la calidez se profundizan con el tiempo."
+    }
+  }
+}

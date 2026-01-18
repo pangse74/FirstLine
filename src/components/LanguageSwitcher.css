@@ -1,0 +1,30 @@
+.language-switcher-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background-color: var(--component-background);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light);
+  transition: all 0.3s ease;
+}
+
+.language-select {
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.language-select:focus {
+  outline: 2px solid var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-color);
+}

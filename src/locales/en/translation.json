@@ -1,0 +1,419 @@
+{
+  "common": {
+    "loading": "Loading..."
+  },
+  "home": {
+    "title": "First Impression AI",
+    "subtitle": "Discover your first impression with just one photo!",
+    "uploadButton": "Upload Photo"
+  },
+  "result": {
+    "noImageUploaded": "No image uploaded.",
+    "goBackAndUpload": "Go back and upload",
+    "hashtags": "#FirstImpression #AIOpinion #FaceCaption",
+    "shareButton": "Share",
+    "retryButton": "Try Again"
+  },
+  "phrases": {
+    "phrase1": {
+      "core": "The type that naturally inspires trust in a team",
+      "explain": "A sense of responsibility and reliability is felt."
+    },
+    "phrase2": {
+      "core": "Someone whose presence is felt even without speaking",
+      "explain": "Possesses a heavy sense of trust that fills the space."
+    },
+    "phrase3": {
+      "core": "An impression of someone who will finish what they start",
+      "explain": "Strong will and sincerity are seen in their eyes."
+    },
+    "phrase4": {
+      "core": "A face that makes you feel at ease just being near",
+      "explain": "Shares a calm and stable energy with those around."
+    },
+    "phrase5": {
+      "core": "The type you can rely on in critical moments",
+      "explain": "A firmness that won't easily waver is felt."
+    },
+    "phrase6": {
+      "core": "Quiet but will firmly hold the center",
+      "explain": "Will silently support the team with inner strength."
+    },
+    "phrase7": {
+      "core": "An aura of trustworthiness even at first glance",
+      "explain": "An honest and upright aura creates this impression."
+    },
+    "phrase8": {
+      "core": "An impression of natural responsibility",
+      "explain": "Because carefulness is evident in their words and actions."
+    },
+    "phrase9": {
+      "core": "A face that seems to keep promises well",
+      "explain": "Gives trust that they will definitely keep their word."
+    },
+    "phrase10": {
+      "core": "The type who remains calmer in urgent situations",
+      "explain": "Likely to judge situations rationally and wisely."
+    },
+    "phrase11": {
+      "core": "Someone who shows rather than tells",
+      "explain": "Their hidden reliability beneath silence is charming."
+    },
+    "phrase12": {
+      "core": "The type that would be missed if absent from the team",
+      "explain": "Because your presence adds stability to the team."
+    },
+    "phrase13": {
+      "core": "An impression of someone who would be a standard when decisions are needed",
+      "explain": "Likely to have clear and rational thoughts."
+    },
+    "phrase14": {
+      "core": "A face exuding stable energy",
+      "explain": "Just being with them makes the surroundings calm."
+    },
+    "phrase15": {
+      "core": "The type one would seek advice from",
+      "explain": "Likely to give wise answers with deep thought."
+    },
+    "phrase16": {
+      "core": "Someone who looks after those around them well",
+      "explain": "A warm and delicate heart shows on their face."
+    },
+    "phrase17": {
+      "core": "A style of building trust steadily",
+      "explain": "Someone whose true worth emerges over time."
+    },
+    "phrase18": {
+      "core": "An impression of someone you can feel secure working with",
+      "explain": "Likely to do their part meticulously and sincerely."
+    },
+    "phrase19": {
+      "core": "Has weight but isn't burdensome",
+      "explain": "Possesses a charm that offers both comfort and reliability."
+    },
+    "phrase20": {
+      "core": "Someone who makes you feel supported when they're nearby",
+      "explain": "Gives trust that they will stand by you in any situation."
+    },
+    "phrase21": {
+      "core": "A face easy to talk to even at first glance",
+      "explain": "A comfortable and gentle impression makes them approachable."
+    },
+    "phrase22": {
+      "core": "The type who brightens the mood instantly when they smile",
+      "explain": "A bright smile seems to make everyone around happy."
+    },
+    "phrase23": {
+      "core": "An impression that naturally draws favor",
+      "explain": "Unpretentious comfort becomes their charm."
+    },
+    "phrase24": {
+      "core": "Someone who seems easy to be with",
+      "explain": "Possesses a gentle aura that disarms others."
+    },
+    "phrase25": {
+      "core": "The type that softens the atmosphere between people",
+      "explain": "A cheerful and positive energy is felt."
+    },
+    "phrase26": {
+      "core": "A face that makes you want to look again",
+      "explain": "Has a gentle charm that catches the eye."
+    },
+    "phrase27": {
+      "core": "An impression of someone you'd quickly become close with",
+      "explain": "An honest and warm heart shows on their face."
+    },
+    "phrase28": {
+      "core": "The type who wouldn't feel awkward even at a first meeting",
+      "explain": "Gives the feeling they would naturally lead conversations."
+    },
+    "phrase29": {
+      "core": "A face that seems to be good at sensing others' feelings",
+      "explain": "Their kind and delicate gaze is impressive."
+    },
+    "phrase30": {
+      "core": "The type with many subtle appealing points",
+      "explain": "The more you get to know them, the more new charms emerge."
+    },
+    "phrase31": {
+      "core": "Someone well-suited for comfortable conversations",
+      "explain": "A face that makes you want to share daily life."
+    },
+    "phrase32": {
+      "core": "An impression of someone you'd laugh a lot with",
+      "explain": "Full of positive and bright energy."
+    },
+    "phrase33": {
+      "core": "The type that naturally attracts people",
+      "explain": "Likely to have many people around due to their comfortable charm."
+    },
+    "phrase34": {
+      "core": "A memorable face even on the first day you meet them",
+      "explain": "Has a special charm that leaves a good memory."
+    },
+    "phrase35": {
+      "core": "Someone whose conversation would flow well if seated next to them",
+      "explain": "An appealing face that makes you curious."
+    },
+    "phrase36": {
+      "core": "An impression of subtle thoughtfulness",
+      "explain": "A warm heart seems to be embedded in every action."
+    },
+    "phrase37": {
+      "core": "The type who quickly opens up even if shy at first",
+      "explain": "Gives the feeling they would smile brightly if approached first."
+    },
+    "phrase38": {
+      "core": "A face that explains why they have many people around",
+      "explain": "Seems like they would be a good friend to anyone."
+    },
+    "phrase39": {
+      "core": "Someone whose soft first impression is a strength",
+      "explain": "Reassures others with a warm and comfortable atmosphere."
+    },
+    "phrase40": {
+      "core": "The type not difficult to get close to",
+      "explain": "Likely to have an open mind and a positive attitude."
+    },
+    "phrase41": {
+      "core": "A face that seems to have a humorous point even when still",
+      "explain": "Makes you imagine something amusing in a subtle way."
+    },
+    "phrase42": {
+      "core": "The type who is unexpectedly funny once you get to know them",
+      "explain": "A sense of humor seems hidden behind a serious expression."
+    },
+    "phrase43": {
+      "core": "Someone whose first impression and reality seem different",
+      "explain": "The more you know them, the more new sides you expect."
+    },
+    "phrase44": {
+      "core": "An impression of someone secretly funny even with a straight face",
+      "explain": "Curious about the unexpected charm beyond a chic expression."
+    },
+    "phrase45": {
+      "core": "The type who lands a punchline at an unexpected moment",
+      "explain": "Seems likely to say something impactful after being quiet."
+    },
+    "phrase46": {
+      "core": "A face that seems capable of witty remarks despite seeming quiet",
+      "explain": "Gives the feeling they would use incisive humor."
+    },
+    "phrase47": {
+      "core": "The type you thought was serious but has a twist",
+      "explain": "Likely to have unexpected clumsiness or comedic timing."
+    },
+    "phrase48": {
+      "core": "Someone who might be hiding a 'laugh button'",
+      "explain": "Seems capable of giving uncontrollable laughter once it starts."
+    },
+    "phrase49": {
+      "core": "An impression of someone whose mood would change once they get comfortable",
+      "explain": "Once shyness fades, they'll become the life of the party."
+    },
+    "phrase50": {
+      "core": "The type who subtly throws out funny remarks",
+      "explain": "Their casual delivery of jokes seems charming."
+    },
+    "phrase51": {
+      "core": "Someone whose charm grows the closer you get",
+      "explain": "Has more diverse sides than their first impression suggests."
+    },
+    "phrase52": {
+      "core": "The type who will be remembered long after making you laugh once",
+      "explain": "Leaves a strong impression with unique humor."
+    },
+    "phrase53": {
+      "core": "A face that seems to have a much more relaxed personality than expected",
+      "explain": "Likely to be more open and cheerful than they appear."
+    },
+    "phrase54": {
+      "core": "An impression that will be remembered for its unexpected charm",
+      "explain": "Their unpredictable nature makes you more curious."
+    },
+    "phrase55": {
+      "core": "The type who seems serious but is funnier because of it",
+      "explain": "Jokes delivered with a serious face are likely their killer move."
+    },
+    "phrase56": {
+      "core": "Someone who might be clumsy underneath it all",
+      "explain": "Behind their perfect appearance lies human charm."
+    },
+    "phrase57": {
+      "core": "A face that seems to change the atmosphere when they speak",
+      "explain": "Seems like every word would draw attention."
+    },
+    "phrase58": {
+      "core": "The type whose sense of humor subtly matches well",
+      "explain": "Seems like you'd keep laughing whenever you're together."
+    },
+    "phrase59": {
+      "core": "Likely to carry the group chat once close",
+      "explain": "Will lead conversations with witty remarks."
+    },
+    "phrase60": {
+      "core": "An impression where quiet twists are anticipated",
+      "explain": "Curious about the pleasant humor hidden beneath a calm exterior."
+    },
+    "phrase61": {
+      "core": "The type who appears competent without saying a word",
+      "explain": "Competence is felt in their confident eyes and attitude."
+    },
+    "phrase62": {
+      "core": "A face that seems to bring order to situations from the center",
+      "explain": "Likely to solve complex problems with keen judgment."
+    },
+    "phrase63": {
+      "core": "An impression of professionalism even at first glance",
+      "explain": "Confidence and pride in their field are evident."
+    },
+    "phrase64": {
+      "core": "Someone well-suited for positions of responsibility",
+      "explain": "Seems like they would lead a team well with natural leadership."
+    },
+    "phrase65": {
+      "core": "The type that won't easily waver",
+      "explain": "Possesses a steadfastness that won't lose composure in any crisis."
+    },
+    "phrase66": {
+      "core": "A face that seems cautious when making decisions",
+      "explain": "Likely to prioritize data and logic over emotion."
+    },
+    "phrase67": {
+      "core": "An impression where leadership comes naturally",
+      "explain": "The power to lead people towards goals is felt."
+    },
+    "phrase68": {
+      "core": "The type with a strong image of being good at work",
+      "explain": "A thorough and smart atmosphere is impressive."
+    },
+    "phrase69": {
+      "core": "Someone others would trust and entrust tasks to",
+      "explain": "Gives trust that their work will be neat and accurate."
+    },
+    "phrase70": {
+      "core": "A face that seems to make good judgments in critical moments",
+      "explain": "Likely to pierce through the core with sharp insight."
+    },
+    "phrase71": {
+      "core": "The type who shows results rather than words",
+      "explain": "Someone who proves their worth through ability."
+    },
+    "phrase72": {
+      "core": "An impression of a weighty presence",
+      "explain": "A serious demeanor builds deep trust."
+    },
+    "phrase73": {
+      "core": "Someone who seems to take on central roles in an organization",
+      "explain": "Will be recognized anywhere for their inherent capabilities."
+    },
+    "phrase74": {
+      "core": "A face that subtly gives off a professional vibe",
+      "explain": "Possesses an aura of someone deeply specialized in a field."
+    },
+    "phrase75": {
+      "core": "Seems like someone who knows how to take responsibility",
+      "explain": "Likely to take full responsibility for their decisions and actions."
+    },
+    "phrase76": {
+      "core": "The type who can take lead in situations",
+      "explain": "Possesses the power to persuade people with a clear vision."
+    },
+    "phrase77": {
+      "core": "An impression of influence even with few words",
+      "explain": "Every word spoken seems to carry weight."
+    },
+    "phrase78": {
+      "core": "A face where trust and competence are felt together",
+      "explain": "Appears to be someone with both ability and character."
+    },
+    "phrase79": {
+      "core": "Someone you could entrust important tasks to",
+      "explain": "Likely to deliver results beyond expectations."
+    },
+    "phrase80": {
+      "core": "The type whose professional aura is a strength",
+      "explain": "Manages themselves meticulously and is sincere in everything."
+    },
+    "phrase81": {
+      "core": "A face that shows thoughtfulness even without words",
+      "explain": "Kindness emanates from their warm gaze and expression."
+    },
+    "phrase82": {
+      "core": "The type who listens well to others' stories",
+      "explain": "Likely to truly empathize and listen attentively."
+    },
+    "phrase83": {
+      "core": "An impression that makes you feel relaxed when nearby",
+      "explain": "A comfortable and gentle energy surrounds them."
+    },
+    "phrase84": {
+      "core": "Someone who empathizes well with emotions",
+      "explain": "Will delicately read and comfort others' feelings."
+    },
+    "phrase85": {
+      "core": "A face that offers comfort when nearby",
+      "explain": "Possesses a warmth that gives strength just by being present."
+    },
+    "phrase86": {
+      "core": "The type exuding gentle energy",
+      "explain": "Creates a calm atmosphere for those around with their mild demeanor."
+    },
+    "phrase87": {
+      "core": "An impression that puts people at ease",
+      "explain": "Has a special power that makes others approach without hesitation."
+    },
+    "phrase88": {
+      "core": "A face that seems to offer warm words of comfort",
+      "explain": "Likely to offer kind solace even in small moments."
+    },
+    "phrase89": {
+      "core": "Someone who looks after those around them well",
+      "explain": "Will meticulously take care of needs with keen observation."
+    },
+    "phrase90": {
+      "core": "The type with delicate emotional expressions",
+      "explain": "Likely to see the world richly with abundant sensitivity."
+    },
+    "phrase91": {
+      "core": "An impression of someone especially good to close ones",
+      "explain": "Someone who will give everything once they open their heart."
+    },
+    "phrase92": {
+      "core": "A face where sincerity is felt in every word",
+      "explain": "Their unadorned and genuine appearance leaves a deep resonance."
+    },
+    "phrase93": {
+      "core": "The type who quietly offers comfort",
+      "explain": "Will gently embrace hearts, quietly standing by without fuss."
+    },
+    "phrase94": {
+      "core": "An impression that brings stability when together",
+      "explain": "Possesses the power to calm even complex feelings."
+    },
+    "phrase95": {
+      "core": "A face that seems to value people",
+      "explain": "Likely to treat all relationships with sincerity."
+    },
+    "phrase96": {
+      "core": "The type with emotional empathy",
+      "explain": "Likely to possess artistic sensibility and deep empathy."
+    },
+    "phrase97": {
+      "core": "Someone who quietly supports from the side",
+      "explain": "A reliable ally who trusts and supports any choice you make."
+    },
+    "phrase98": {
+      "core": "An impression of comfortable warmth",
+      "explain": "Possesses a perfectly balanced warmth, neither too hot nor too cold."
+    },
+    "phrase99": {
+      "core": "A face that seems to handle emotional fluctuations well",
+      "explain": "Will embrace all emotions with a broad mind."
+    },
+    "phrase100": {
+      "core": "The type who grows warmer the longer you know them",
+      "explain": "Sincerity and warmth deepen over time."
+    }
+  }
+}

@@ -1,8 +1,10 @@
 import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './HomePage.css';
 
 const HomePage = ({ setImage }) => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const fileInputRef = useRef(null);
 
@@ -20,11 +22,11 @@ const HomePage = ({ setImage }) => {
 
   return (
     <div className="home-container">
-      <h1 className="title">첫인상 AI</h1>
-      <p className="subtitle">사진 한 장으로 당신의 첫인상을 확인해보세요!</p>
+      <h1 className="title">{t('home.title')}</h1>
+      <p className="subtitle">{t('home.subtitle')}</p>
       <div className="upload-container">
         <button className="upload-button" onClick={handleUploadClick}>
-          사진 업로드
+          {t('home.uploadButton')}
         </button>
         <input
           type="file"
