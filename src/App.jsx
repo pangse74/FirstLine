@@ -3,7 +3,8 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ResultPage from './pages/ResultPage';
 import ThemeToggle from './components/ThemeToggle';
-import LanguageSwitcher from './components/LanguageSwitcher'; // Import LanguageSwitcher
+import LanguageSwitcher from './components/LanguageSwitcher';
+import './App.css'; // Import App.css
 
 function App() {
   const [image, setImage] = useState(null);
@@ -11,7 +12,7 @@ function App() {
   return (
     <HashRouter>
       <div className="App">
-        <div style={{ position: 'fixed', top: '20px', left: '20px', display: 'flex', gap: '10px', zIndex: '1000' }}>
+        <div className="utility-buttons-container">
           <LanguageSwitcher />
           <ThemeToggle />
         </div>

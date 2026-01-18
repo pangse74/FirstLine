@@ -55,3 +55,25 @@
   box-shadow: inset 5px 5px 10px var(--shadow-dark), inset -5px -5px 10px var(--shadow-light);
   transform: translateY(1px);
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .upload-container {
+    width: 250px;
+    height: 150px;
+  }
+
+  .upload-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
