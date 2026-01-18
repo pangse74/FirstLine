@@ -12,7 +12,8 @@
     "goBackAndUpload": "Volver y subir imagen",
     "hashtags": "#PrimeraImpresion #OpinionIA #FaceCaption",
     "shareButton": "Compartir",
-    "retryButton": "Intentar de Nuevo"
+    "retryButton": "Intentar de Nuevo",
+    "saveImageButton": "Guardar Imagen"
   },
   "phrases": {
     "phrase1": {

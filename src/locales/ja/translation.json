@@ -12,7 +12,8 @@
     "goBackAndUpload": "戻って画像をアップロード",
     "hashtags": "#第一印象 #AI一言 #FaceCaption",
     "shareButton": "共有",
-    "retryButton": "もう一度試す"
+    "retryButton": "もう一度試す",
+    "saveImageButton": "画像を保存"
   },
   "phrases": {
     "phrase1": {

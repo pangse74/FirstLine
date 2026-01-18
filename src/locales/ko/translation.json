@@ -9,7 +9,8 @@
     "goBackAndUpload": "돌아가서 사진 업로드",
     "hashtags": "#첫인상 #AI한줄 #FaceCaption",
     "shareButton": "공유",
-    "retryButton": "다시 찍기"
+    "retryButton": "다시 찍기",
+    "saveImageButton": "이미지 저장"
   },
   "phrases": {
     "phrase1": {

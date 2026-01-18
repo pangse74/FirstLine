@@ -12,7 +12,8 @@
     "goBackAndUpload": "Go back and upload",
     "hashtags": "#FirstImpression #AIOpinion #FaceCaption",
     "shareButton": "Share",
-    "retryButton": "Try Again"
+    "retryButton": "Try Again",
+    "saveImageButton": "Save Image"
   },
   "phrases": {
     "phrase1": {
