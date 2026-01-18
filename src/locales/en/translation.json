@@ -1,4 +1,5 @@
 {
+  "appTitle": "First Impression AI",
   "common": {
     "loading": "Loading..."
   },
@@ -12,8 +13,10 @@
     "goBackAndUpload": "Go back and upload",
     "hashtags": "#FirstImpression #AIOpinion #FaceCaption",
     "shareButton": "Share",
-    "retryButton": "Try Again",
-    "saveImageButton": "Save Image"
+    "retryButton": "Try Again"
+  },
+  "share": {
+    "text": "My first impression: \"{{phrase}}\" #FirstImpressionAI"
   },
   "phrases": {
     "phrase1": {

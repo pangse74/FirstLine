@@ -1,4 +1,5 @@
 {
+  "appTitle": "AI ấn tượng đầu tiên",
   "common": {
     "loading": "Đang tải..."
   },
@@ -12,8 +13,10 @@
     "goBackAndUpload": "Quay lại và tải ảnh lên",
     "hashtags": "#ẤnTượngĐầuTiên #AIChoÝKiến #FaceCaption",
     "shareButton": "Chia sẻ",
-    "retryButton": "Thử lại",
-    "saveImageButton": "Lưu ảnh"
+    "retryButton": "Thử lại"
+  },
+  "share": {
+    "text": "Ấn tượng đầu tiên của tôi: \"{{phrase}}\" #ẤnTượngĐầuTiênAI"
   },
   "phrases": {
     "phrase1": {
@@ -394,22 +397,22 @@
     },
     "phrase95": {
       "core": "Một khuôn mặt dường như coi trọng mọi người",
-      "explain": "Có khả năng đối xử với tất cả các mối quan hệ bằng sự chân thành."
+      "explain": "Có khả năng đối xử với tất cả các mối 관계 bằng sự chân성."
     },
     "phrase96": {
-      "core": "Kiểu người có khả năng đồng cảm cảm xúc",
-      "explain": "Có khả năng sở hữu sự nhạy cảm nghệ thuật và sự đồng cảm sâu sắc."
+      "core": "Kiểu người có khả năng đồng감 감성",
+      "explain": "Có khả năng sở hữu sự nhạy감 예술과 깊은 공감대."
     },
     "phrase97": {
-      "core": "Người âm thầm ủng hộ từ bên cạnh",
-      "explain": "Một đồng minh đáng tin cậy luôn tin tưởng và ủng hộ mọi lựa chọn của bạn."
+      "core": "Người âm thầm ủng호 từ bên cạnh",
+      "explain": "Một đồng맹 đáng tin cậy luôn tin tưởng và ủng hộ mọi lựa chọn của bạn."
     },
     "phrase98": {
       "core": "Ấn tượng về sự ấm áp thoải mái",
       "explain": "Sở hữu một sự ấm áp cân bằng hoàn hảo, không quá nóng cũng không quá lạnh."
     },
     "phrase99": {
-      "core": "Một khuôn mặt dường như xử lý tốt các biến động cảm xúc",
+      "core": "Kiểu người dường như xử lý tốt các biến động cảm xúc",
       "explain": "Sẽ ôm lấy tất cả cảm xúc bằng một tâm hồn rộng mở."
     },
     "phrase100": {

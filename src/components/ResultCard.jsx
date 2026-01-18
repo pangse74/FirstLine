@@ -1,34 +1,57 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import html2canvas from 'html2canvas'; // Import html2canvas
+import html2canvas from 'html2canvas';
 import { phrasesMeta } from '../data/phrases';
 import './ResultCard.css';
 
 const ResultCard = ({ image, onRetry }) => {
   const { t } = useTranslation();
   const [selectedPhraseId, setSelectedPhraseId] = useState(null);
-  const cardRef = useRef(null); // Ref to the outer card element for general styling
-  const contentToCaptureRef = useRef(null); // New ref for the content to be captured
+  const cardRef = useRef(null);
+  const contentToCaptureRef = useRef(null);
 
   useEffect(() => {
-    // Select a random phrase meta object when the component mounts
     const randomIndex = Math.floor(Math.random() * phrasesMeta.length);
     setSelectedPhraseId(phrasesMeta[randomIndex].id);
   }, []);
 
-  const handleDownloadImage = () => {
-    if (contentToCaptureRef.current) {
-      html2canvas(contentToCaptureRef.current, { // Target the contentToCaptureRef
-        useCORS: true, // Important for images loaded from different origins
-        // You might need to set windowWidth and windowHeight if your card is responsive
-        // width: contentToCaptureRef.current.offsetWidth,
-        // height: contentToCaptureRef.current.offsetHeight,
-      }).then(canvas => {
+  const handleShareOrDownload = async () => {
+    if (!contentToCaptureRef.current) return;
+
+    try {
+      const canvas = await html2canvas(contentToCaptureRef.current, {
+        useCORS: true,
+      });
+      const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+      const file = new File([blob], 'firstline_impression.png', { type: 'image/png' });
+
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        await navigator.share({
+          files: [file],
+          title: t('appTitle'), // Assuming appTitle is defined in translations
+          text: t('share.text', { phrase: t(`phrases.${selectedPhraseId}.core`) }), // Dynamic share text
+          url: window.location.href,
+        });
+        console.log('Image shared successfully');
+      } else {
+        // Fallback to download if Web Share API is not available or cannot share files
         const link = document.createElement('a');
         link.download = 'firstline_impression.png';
         link.href = canvas.toDataURL('image/png');
         link.click();
-      });
+        console.log('Image downloaded');
+      }
+    } catch (error) {
+      console.error('Error sharing or downloading image:', error);
+      // Fallback to download in case of Web Share API error
+      if (contentToCaptureRef.current) {
+        const canvas = await html2canvas(contentToCaptureRef.current, { useCORS: true });
+        const link = document.createElement('a');
+        link.download = 'firstline_impression.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+        console.log('Image downloaded after share error');
+      }
     }
   };
 
@@ -39,7 +62,7 @@ const ResultCard = ({ image, onRetry }) => {
   return (
     <div className="card-container">
       <div className="card" ref={cardRef}>
-        <div ref={contentToCaptureRef} className="content-to-capture"> {/* Wrap desired content */}
+        <div ref={contentToCaptureRef} className="content-to-capture">
           <div className="image-wrapper">
             <img src={image} alt="User" className="user-image" />
           </div>
@@ -49,8 +72,8 @@ const ResultCard = ({ image, onRetry }) => {
         <div className="card-footer">
           <span className="hashtags">{t('result.hashtags')}</span>
           <div className="button-group">
-            <button className="share-button" onClick={handleDownloadImage}>
-              {t('result.saveImageButton')}
+            <button className="share-button" onClick={handleShareOrDownload}>
+              {t('result.shareButton')}
             </button>
             <button className="retry-button" onClick={onRetry}>
               {t('result.retryButton')}
