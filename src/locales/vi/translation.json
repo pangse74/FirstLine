@@ -19,7 +19,7 @@
     "text": "Ấn tượng đầu tiên của tôi: \"{{phrase}}\" #ẤnTượngĐầuTiênAI"
   },
   "footer": {
-    "home": "Trang chủ",
+    "home": "Trang chủ FirstLine",
     "about": "Giới thiệu dịch vụ",
     "privacy": "Chính sách bảo mật",
     "terms": "Điều khoản dịch vụ",
@@ -214,7 +214,7 @@
       "explain": "Một khiếu hài hước dường như ẩn giấu sau một vẻ mặt nghiêm túc."
     },
     "phrase43": {
-      "core": "Người có ấn tượng đầu tiên và thực tế dường như khác nhau",
+      "core": "Người mà ấn tượng đầu tiên và thực tế dường như khác nhau",
       "explain": "Càng tìm hiểu họ, bạn càng mong đợi những khía cạnh mới."
     },
     "phrase44": {
@@ -247,7 +247,7 @@
     },
     "phrase51": {
       "core": "Người mà sự quyến rũ càng tăng lên khi bạn càng gần gũi",
-      "explain": "Có nhiều khía cạnh đa dạng hơn so với ấn tượng đầu tiên."
+      "explain": "Có nhiều khía khạnh đa dạng hơn so với ấn tượng đầu tiên."
     },
     "phrase52": {
       "core": "Kiểu người sẽ được nhớ rất lâu sau khi làm bạn cười một lần",
@@ -315,7 +315,7 @@
     },
     "phrase68": {
       "core": "Kiểu người có hình ảnh mạnh mẽ về việc làm tốt công việc",
-      "explain": "Một không khí tỉ mị và thông minh rất ấn tượng."
+      "explain": "Một không khí tỉ mỉ và thông minh rất ấn tượng."
     },
     "phrase69": {
       "core": "Người khác sẽ tin tưởng và giao phó nhiệm vụ",
@@ -346,8 +346,8 @@
       "explain": "Có khả năng chịu hoàn toàn trách nhiệm về các quyết định và hành động của họ."
     },
     "phrase76": {
-      "core": "Kiểu người có thể chủ động trong các tình huống",
-      "explain": "Sở hữu sức mạnh để thuyết phục mọi người bằng một tầm nhìn rõ ràng."
+      "core": "El tipo que puede tomar la iniciativa en las situaciones",
+      "explain": "Posee el poder de persuadir a la gente con una visión clara."
     },
     "phrase77": {
       "core": "Ấn tượng về sự ảnh hưởng ngay cả với ít lời nói",
@@ -363,7 +363,7 @@
     },
     "phrase80": {
       "core": "Kiểu người có khí chất chuyên nghiệp là một điểm mạnh",
-      "explain": "Quản lý bản thân tỉ mị và chân thành trong mọi việc."
+      "explain": "Quản lý bản thân tỉ mỉ và chân thành trong mọi việc."
     },
     "phrase81": {
       "core": "Khuôn mặt thể hiện sự chu đáo ngay cả khi không nói gì",

@@ -19,6 +19,7 @@
     "text": "Ấn tượng đầu tiên của tôi: \"{{phrase}}\" #ẤnTượngĐầuTiênAI"
   },
   "footer": {
+    "home": "Trang chủ FirstLine",
     "about": "Giới thiệu dịch vụ",
     "privacy": "Chính sách bảo mật",
     "terms": "Điều khoản dịch vụ",
@@ -342,107 +343,107 @@
     },
     "phrase75": {
       "core": "Có vẻ là người biết cách chịu trách nhiệm",
-      "explain": "Có khả năng chịu hoàn toàn trách nhiệm về các quyết định và hành động của họ."
+      "explain": "Có khả năng chịu hoàn toàn trách nhiệm về các quyết định y acciones."
     },
     "phrase76": {
-      "core": "El tipo que puede tomar la iniciativa en las situaciones",
-      "explain": "Posee el poder de persuadir a la gente con una visión clara."
+      "core": "Kiểu người có thể chủ động trong các tình huống",
+      "explain": "Sở hữu sức mạnh thuyết phục mọi người bằng tầm nhìn rõ ràng."
     },
     "phrase77": {
-      "core": "Una impresión de influencia incluso con pocas palabras",
-      "explain": "Cada palabra dicha parece tener peso."
+      "core": "Ấn tượng về sự ảnh hưởng ngay cả với ít lời nói",
+      "explain": "Mỗi lời nói ra dường như có trọng lượng."
     },
     "phrase78": {
-      "core": "Una cara donde la confianza y la competencia se sienten juntas",
-      "explain": "Parece ser alguien con habilidad y carácter."
+      "core": "Khuôn mặt nơi sự tự tin và năng lực được cảm nhận cùng nhau",
+      "explain": "Có vẻ là người có kỹ năng và tính cách."
     },
     "phrase79": {
-      "core": "Alguien a quien se le podrían confiar tareas importantes",
-      "explain": "Es probable que ofrezca resultados más allá de las expectativas."
+      "core": "Người mà các nhiệm vụ quan trọng có thể được giao phó",
+      "explain": "Có khả năng mang lại kết quả vượt quá mong đợi."
     },
     "phrase80": {
-      "core": "El tipo cuya aura profesional es una fortaleza",
-      "explain": "Se gestiona meticulosamente y es sincero en todo."
+      "core": "Kiểu người có khí chất chuyên nghiệp là một điểm mạnh",
+      "explain": "Được quản lý tỉ mỉ và chân thành trong mọi việc."
     },
     "phrase81": {
-      "core": "Una cara que muestra consideración incluso sin palabras",
-      "explain": "La amabilidad emana de su cálida mirada y expresión."
+      "core": "Một khuôn mặt thể hiện sự quan tâm ngay cả khi không lời nói",
+      "explain": "Sự tử tế tỏa ra từ ánh nhìn và biểu cảm ấm áp của họ."
     },
     "phrase82": {
-      "core": "El tipo que escucha bien las historias de los demás",
-      "explain": "Es probable que empatice sinceramente y escuche atentamente."
+      "core": "Kiểu người lắng nghe tốt những câu chuyện của người khác",
+      "explain": "Có khả năng đồng cảm chân thành và lắng nghe chăm chú."
     },
     "phrase83": {
-      "core": "Una impresión que te hace sentir relajado cuando estás cerca",
-      "explain": "Una energía cómoda y suave les rodea."
+      "core": "Ấn tượng khiến bạn cảm thấy thư giãn khi ở gần",
+      "explain": "Một năng lượng thoải mái và nhẹ nhàng bao quanh họ."
     },
     "phrase84": {
-      "core": "Alguien que empatiza bien con las emociones",
-      "explain": "Leerá delicadamente y consolará los sentimientos de los demás."
+      "core": "Người đồng cảm tốt với cảm xúc",
+      "explain": "Sẽ đọc và an ủi một cách tinh tế những cảm xúc của người khác."
     },
     "phrase85": {
-      "core": "Una cara que ofrece consuelo cuando está cerca",
-      "explain": "Posee una calidez que da fuerza solo con su presencia."
+      "core": "Một khuôn mặt mang lại sự an ủi khi ở gần",
+      "explain": "Sở hữu một sự ấm áp mang lại sức mạnh chỉ bằng sự hiện diện của họ."
     },
     "phrase86": {
-      "core": "El tipo que irradia una energía suave",
-      "explain": "Crea una atmósfera tranquila para los que le rodean con su comportamiento apacible."
+      "core": "Kiểu người tỏa ra một năng lượng nhẹ nhàng",
+      "explain": "Tạo ra một bầu không khí yên tĩnh cho những người xung quanh bằng thái độ điềm đạm của họ."
     },
     "phrase87": {
-      "core": "Una impresión que tranquiliza a la gente",
-      "explain": "Tiene un poder especial que hace que los demás se acerquen sin dudarlo."
+      "core": "Ấn tượng làm dịu lòng người",
+      "explain": "Có một sức mạnh đặc biệt khiến người khác đến gần mà không do dự."
     },
     "phrase88": {
-      "core": "Una cara que parece ofrecer cálidas palabras de consuelo",
-      "explain": "Es probable que ofrezca un amable consuelo incluso en pequeños momentos."
+      "core": "Một khuôn mặt dường như đưa ra những lời an ủi ấm áp",
+      "explain": "Có khả năng đưa ra sự an ủi tử tế ngay cả trong những khoảnh khắc nhỏ."
     },
     "phrase89": {
-      "core": "Alguien que cuida bien a los que le rodean",
-      "explain": "Se ocupará meticulosamente de las necesidades con una aguda observación."
+      "core": "Người quan tâm tốt đến những người xung quanh",
+      "explain": "Sẽ tỉ mỉ đáp ứng nhu cầu với sự quan sát sắc bén."
     },
     "phrase90": {
-      "core": "El tipo con expresiones emocionales delicadas",
-      "explain": "Es probable que vea el mundo ricamente con una sensibilidad abundante."
+      "core": "Kiểu người có biểu cảm cảm xúc tinh tế",
+      "explain": "Có khả năng nhìn thế giới một cách phong phú với sự nhạy cảm dồi dào."
     },
     "phrase91": {
-      "core": "Una impresión de alguien especialmente bueno con los cercanos",
-      "explain": "Alguien que lo dará todo una vez que abra su corazón."
+      "core": "Ấn tượng về người đặc biệt giỏi với những người thân thiết",
+      "explain": "Người sẽ cống hiến hết mình một khi họ mở lòng."
     },
     "phrase92": {
-      "core": "Una cara donde la sinceridad se siente en cada palabra",
-      "explain": "Su apariencia sencilla y genuina deja una profunda resonancia."
+      "core": "Một khuôn mặt nơi sự chân thành được cảm nhận trong từng lời nói",
+      "explain": "Vẻ ngoài giản dị và chân thật của họ để lại sự cộng hưởng sâu sắc."
     },
     "phrase93": {
-      "core": "El tipo que ofrece consuelo en silencio",
-      "explain": "Abrazará suavemente los corazones, manteniéndose en silencio sin alboroto."
+      "core": "Kiểu người mang lại sự an ủi thầm lặng",
+      "explain": "Sẽ ôm lấy trái tim một cách nhẹ nhàng, giữ im lặng mà không gây ồn ào."
     },
     "phrase94": {
-      "core": "Una impresión de calidez confortable",
-      "explain": "Posee una calidez perfectamente equilibrada, ni demasiado caliente ni demasiado fría."
+      "core": "Ấn tượng mang lại sự ổn định khi ở bên nhau",
+      "explain": "Sở hữu sức mạnh để làm dịu cả những cảm xúc phức tạp."
     },
     "phrase95": {
-      "core": "Una cara que parece manejar bien las fluctuaciones emocionales",
-      "explain": "Abrazará todas las emociones con una mente abierta."
+      "core": "Một khuôn mặt dường như coi trọng mọi người",
+      "explain": "Có khả năng đối xử chân thành với mọi mối quan hệ."
     },
     "phrase96": {
-      "core": "El tipo con empatía emocional",
-      "explain": "Es probable que posea sensibilidad artística y una profunda empatía."
+      "core": "Kiểu người có sự đồng cảm về cảm xúc",
+      "explain": "Có khả năng sở hữu sự nhạy cảm nghệ thuật và sự đồng cảm sâu sắc."
     },
     "phrase97": {
-      "core": "Alguien que apoya en silencio desde un lado",
-      "explain": "Un aliado fiable que confía y apoya cualquier elección que hagas."
+      "core": "Người lặng lẽ hỗ trợ từ một bên",
+      "explain": "Một đồng minh đáng tin cậy tin tưởng và hỗ trợ mọi lựa chọn bạn đưa ra."
     },
     "phrase98": {
-      "core": "Una impresión de calidez confortable",
-      "explain": "Posee una calidez perfectamente equilibrada, ni demasiado caliente ni demasiado fría."
+      "core": "Ấn tượng về sự ấm áp thoải mái",
+      "explain": "Sở hữu một sự ấm áp cân bằng hoàn hảo, không quá nóng cũng không quá lạnh."
     },
     "phrase99": {
-      "core": "Una cara que parece manejar bien las fluctuaciones emocionales",
-      "explain": "Abrazará todas las emociones con una mente abierta."
+      "core": "Một khuôn mặt dường như xử lý tốt những biến động cảm xúc",
+      "explain": "Sẽ đón nhận mọi cảm xúc với một tâm trí cởi mở."
     },
     "phrase100": {
-      "core": "El tipo que se vuelve más cálido cuanto más lo conoces",
-      "explain": "La sinceridad y la calidez se profundizan con el tiempo."
+      "core": "Kiểu người trở nên ấm áp hơn khi bạn càng biết họ",
+      "explain": "Sự chân thành và ấm áp ngày càng sâu sắc theo thời gian."
     }
   }
 }
