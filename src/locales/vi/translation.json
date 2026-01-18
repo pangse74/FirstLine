@@ -18,6 +18,31 @@
   "share": {
     "text": "Ấn tượng đầu tiên của tôi: \"{{phrase}}\" #ẤnTượngĐầuTiênAI"
   },
+  "footer": {
+    "about": "Giới thiệu dịch vụ",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản dịch vụ",
+    "rightsReserved": "Mọi quyền được bảo lưu."
+  },
+  "about": {
+    "title": "Giới thiệu dịch vụ FirstLine",
+    "paragraph1": "FirstLine là một dịch vụ sáng tạo phân tích ảnh của bạn bằng AI để đưa ra một câu nhận xét ngắn gọn về ấn tượng đầu tiên. Dịch vụ này được thiết kế để giúp bạn khám phá hình ảnh của mình và chia sẻ với bạn bè một cách nhẹ nhàng và vui vẻ, thay vì phân tích hoặc chẩn đoán phức tạp.",
+    "paragraph2": "Chúng tôi bắt đầu dịch vụ này từ sự tò mò về ấn tượng đầu tiên mà mọi người để lại cho nhau. FirstLine sử dụng công nghệ AI để giúp bạn khám phá sự quyến rũ của mình và tận hưởng niềm vui hiểu bản thân từ một góc nhìn mới. Tất cả các nhận xét được xây dựng tích cực và hài hước, đảm bảo mang lại trải nghiệm thú vị.",
+    "paragraph3": "FirstLine sẽ làm cho những khoảnh khắc quý giá của bạn trở nên đặc biệt hơn và trở thành khởi đầu cho những cuộc trò chuyện mới trên mạng xã hội. Hãy khám phá ấn tượng đầu tiên của bạn ngay bây giờ!"
+  },
+  "privacy": {
+    "title": "Chính sách bảo mật",
+    "paragraph1": "FirstLine (\"Dịch vụ\") tuân thủ các quy định về bảo vệ thông tin cá nhân theo các luật liên quan, bao gồm Luật xúc tiến sử dụng mạng thông tin và truyền thông và bảo vệ thông tin, v.v., và Luật bảo vệ thông tin cá nhân, đồng thời cam kết bảo vệ tối đa thông tin cá nhân của người dùng.",
+    "paragraph2": "Dịch vụ này chỉ tạm thời sử dụng dữ liệu ảnh của người dùng cho mục đích phân tích AI, và tất cả dữ liệu sẽ bị hủy ngay sau khi hoàn tất phân tích mà không được lưu trữ. Chúng tôi không cung cấp dữ liệu ảnh của người dùng cho bên thứ ba hoặc sử dụng cho bất kỳ mục đích nào khác mà không có sự đồng ý của người dùng.",
+    "paragraph3": "Người dùng có quyền rút lại sự đồng ý sử dụng dữ liệu ảnh của họ và có thể ngừng sử dụng dịch vụ bất cứ lúc nào. Mọi thắc mắc, vui lòng liên hệ [Địa chỉ Email].",
+    "paragraph4": "Chính sách này có thể thay đổi theo luật pháp và chính sách, và mọi thay đổi sẽ được thông báo trong dịch vụ."
+  },
+  "terms": {
+    "title": "Điều khoản dịch vụ",
+    "paragraph1": "Các điều khoản và điều kiện này (\"Điều khoản\") nhằm mục đích xác định các quyền, nghĩa vụ và trách nhiệm, và các vấn đề cần thiết khác giữa công ty và các thành viên liên quan đến việc sử dụng tất cả các dịch vụ do FirstLine (\"Dịch vụ\") cung cấp.",
+    "paragraph2": "Mục đích của Dịch vụ là cung cấp các nhận xét vui vẻ dựa trên AI về ấn tượng đầu tiên của một cá nhân. Tất cả các kết quả từ Dịch vụ chỉ mang tính giải trí và không thể được sử dụng làm cơ sở cho bất kỳ chẩn đoán hoặc đánh giá nào.",
+    "paragraph3": "Thành viên phải chịu trách nhiệm về mọi kết quả phát sinh từ việc sử dụng Dịch vụ này. Dịch vụ không đảm bảo tính chính xác hoặc độ tin cậy của nội dung và không chịu trách nhiệm về bất kỳ thiệt hại nào phát sinh từ việc sử dụng Dịch vụ."
+  },
   "phrases": {
     "phrase1": {
       "core": "Kiểu người tự nhiên tạo được niềm tin trong nhóm",
@@ -277,7 +302,7 @@
     },
     "phrase65": {
       "core": "Kiểu người không dễ dàng lay chuyển",
-      "explain": "Sở hữu một sự kiên định không mất bình tĩnh trong bất kỳ cuộc khủng hoái nào."
+      "explain": "Sở hữu một sự kiên định không mất bình tĩnh trong bất kỳ cuộc khủng hoán nào."
     },
     "phrase66": {
       "core": "Một khuôn mặt dường như cẩn trọng khi đưa ra quyết định",
@@ -400,7 +425,7 @@
       "explain": "Có khả năng đối xử với tất cả các mối quan hệ bằng sự chân thành."
     },
     "phrase96": {
-      "core": "Kiểu người có khả năng đồng cảm 감성",
+      "core": "Kiểu người có khả năng đồng cảm cảm성",
       "explain": "Có khả năng sở hữu sự nhạy감 예술과 깊은 공감대."
     },
     "phrase97": {
