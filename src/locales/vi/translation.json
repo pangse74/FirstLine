@@ -11,7 +11,7 @@
   "result": {
     "noImageUploaded": "Chưa tải ảnh lên.",
     "goBackAndUpload": "Quay lại và tải ảnh lên",
-    "hashtags": "#ẤnTượngĐầuTiên #AIChoÝKiến #FaceCaption",
+    "hashtags": "#FirstLine #ẤnTượngĐầuTiênMộtDòng #AIẤnTượngĐầuTiên #KiểmTraẢnhĐạiDiện",
     "shareButton": "Chia sẻ",
     "retryButton": "Thử lại"
   },
@@ -277,7 +277,7 @@
     },
     "phrase65": {
       "core": "Kiểu người không dễ dàng lay chuyển",
-      "explain": "Sở hữu một sự kiên định không mất bình tĩnh trong bất kỳ cuộc khủng hoảng nào."
+      "explain": "Sở hữu một sự kiên định không mất bình tĩnh trong bất kỳ cuộc khủng hoái nào."
     },
     "phrase66": {
       "core": "Một khuôn mặt dường như cẩn trọng khi đưa ra quyết định",
@@ -397,15 +397,15 @@
     },
     "phrase95": {
       "core": "Một khuôn mặt dường như coi trọng mọi người",
-      "explain": "Có khả năng đối xử với tất cả các mối 관계 bằng sự chân성."
+      "explain": "Có khả năng đối xử với tất cả các mối quan hệ bằng sự chân thành."
     },
     "phrase96": {
-      "core": "Kiểu người có khả năng đồng감 감성",
+      "core": "Kiểu người có khả năng đồng cảm 감성",
       "explain": "Có khả năng sở hữu sự nhạy감 예술과 깊은 공감대."
     },
     "phrase97": {
-      "core": "Người âm thầm ủng호 từ bên cạnh",
-      "explain": "Một đồng맹 đáng tin cậy luôn tin tưởng và ủng hộ mọi lựa chọn của bạn."
+      "core": "Người âm thầm ủng hộ từ bên cạnh",
+      "explain": "Một đồng minh đáng tin cậy luôn tin tưởng và ủng hộ mọi lựa chọn của bạn."
     },
     "phrase98": {
       "core": "Ấn tượng về sự ấm áp thoải mái",
