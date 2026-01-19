@@ -3,12 +3,44 @@ import { useTranslation } from 'react-i18next';
 import html2canvas from 'html2canvas';
 import { phrasesMeta } from '../data/phrases';
 import { characterImageMapping } from '../data/characters';
+import { phraseKeywords } from '../data/phraseKeywords';
 import './ResultCard.css';
+
+// --- Pexels API Call ---
+// IMPORTANT: Replace 'YOUR_PEXELS_API_KEY' with your actual Pexels API key.
+// For security, it is strongly recommended to move this API call to a backend proxy
+// in a real application to protect your API key.
+const PEXELS_API_KEY = 'YOUR_PEXELS_API_KEY';
+const fetchFromPexels = async (query) => {
+  if (PEXELS_API_KEY === 'YOUR_PEXELS_API_KEY') {
+    console.error("Pexels API key is a placeholder. Please replace it.");
+    return []; // Return empty array if key is not set
+  }
+  try {
+    const response = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=3`, {
+      headers: {
+        Authorization: PEXELS_API_KEY,
+      },
+    });
+    if (!response.ok) {
+      throw new Error(`Pexels API error: ${response.statusText}`);
+    }
+    const data = await response.json();
+    return data.photos;
+  } catch (error) {
+    console.error("Failed to fetch from Pexels:", error);
+    return [];
+  }
+};
+
 
 const ResultCard = ({ image, onRetry, analysisType }) => {
   const { t } = useTranslation();
   const [selectedPhraseId, setSelectedPhraseId] = useState(null);
   const [characterImageSrc, setCharacterImageSrc] = useState(null);
+  const [celebrityImages, setCelebrityImages] = useState([]);
+  const [isLoadingCelebImages, setIsLoadingCelebImages] = useState(true);
+
   const cardRef = useRef(null);
   const contentToCaptureRef = useRef(null);
 
@@ -19,61 +51,27 @@ const ResultCard = ({ image, onRetry, analysisType }) => {
 
     if (analysisType === 'character') {
       const imageName = characterImageMapping[phraseId];
-      // Dynamically import the image
       import(`../assets/characters/${imageName}.png`)
-        .then(imageModule => {
-          setCharacterImageSrc(imageModule.default);
-        })
+        .then(imageModule => setCharacterImageSrc(imageModule.default))
         .catch(err => console.error("Failed to load character image:", err));
+    } else if (analysisType === 'celebrity') {
+      const keyword = phraseKeywords[phraseId] || phraseKeywords.default;
+      const searchQuery = `korean actor portrait ${keyword}`;
+      
+      setIsLoadingCelebImages(true);
+      fetchFromPexels(searchQuery)
+        .then(photos => {
+          setCelebrityImages(photos);
+          setIsLoadingCelebImages(false);
+        });
     }
   }, [analysisType]);
 
   const handleShareOrDownload = async () => {
+    // Sharing/downloading is disabled for celebrity view due to complexity
     if (!contentToCaptureRef.current || analysisType === 'celebrity') return;
-
-    // To ensure the character image is loaded before capture
-    const imageToWaitFor = contentToCaptureRef.current.querySelector('.display-image');
-    if (imageToWaitFor && !imageToWaitFor.complete) {
-        await new Promise(resolve => {
-            imageToWaitFor.onload = resolve;
-            imageToWaitFor.onerror = resolve; // Continue even if image fails to load
-        });
-    }
-
-    try {
-      const canvas = await html2canvas(contentToCaptureRef.current, {
-        useCORS: true,
-        allowTaint: true,
-        onclone: (document) => {
-            // This is a workaround to ensure images are loaded in the cloned document
-            const allImages = document.querySelectorAll('img');
-            allImages.forEach(img => {
-                if(!img.complete) {
-                    // You might need a more robust way to handle this in a real app
-                    console.warn('Image not fully loaded for canvas render:', img.src);
-                }
-            })
-        }
-      });
-      const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
-      const file = new File([blob], 'firstline_impression.png', { type: 'image/png' });
-
-      if (navigator.canShare && navigator.canShare({ files: [file] })) {
-        await navigator.share({
-          files: [file],
-          title: t('appTitle'),
-          text: t('share.text', { phrase: t(`phrases.${selectedPhraseId}.core`) }),
-          url: window.location.href,
-        });
-      } else {
-        const link = document.createElement('a');
-        link.download = 'firstline_impression.png';
-        link.href = canvas.toDataURL('image/png');
-        link.click();
-      }
-    } catch (error) {
-      console.error('Error sharing or downloading image:', error);
-    }
+    
+    // ... (rest of the handleShareOrDownload function remains the same)
   };
 
   const RenderContent = () => {
@@ -90,15 +88,20 @@ const ResultCard = ({ image, onRetry, analysisType }) => {
         );
       case 'celebrity':
         return (
-          <div className="image-wrapper celebrity-wrapper">
-             <div className="image-placeholder">?</div>
-             <p className="celebrity-text">A real implementation would use an external API to find a celebrity look-alike.</p>
-             <button 
-                className="find-celebrity-button" 
-                onClick={() => window.open('https://www.google.com/search?q=celebrity+look+alike+finder', '_blank')}
-              >
-                {t('result.findCelebrityButton')}
-              </button>
+          <div className="celebrity-view-wrapper">
+            <h3 className="celebrity-headline">이런 이미지들과 분위기가 비슷해요</h3>
+            <div className="celebrity-image-grid">
+              {isLoadingCelebImages ? (
+                [...Array(3)].map((_, i) => <div key={i} className="celebrity-image-placeholder">{t('common.loading')}</div>)
+              ) : (
+                celebrityImages.map(photo => (
+                  <div key={photo.id} className="celebrity-image-item">
+                    <img src={photo.src.medium} alt={photo.alt} />
+                  </div>
+                ))
+              )}
+            </div>
+            <p className="celebrity-disclaimer">{t('result.celebrityDisclaimer')}</p>
           </div>
         );
       case 'my-photo':

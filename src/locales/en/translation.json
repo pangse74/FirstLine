@@ -17,7 +17,7 @@
     "hashtags": "#FirstLine #FirstImpressionLine #AIFirstImpression #ProfileTest",
     "shareButton": "Share",
     "retryButton": "Try Again",
-    "findCelebrityButton": "View similar celebrity externally"
+    "celebrityDisclaimer": "This result is for reference, showing images of a similar style based on the image's mood as searched by AI."
   },
   "share": {
     "text": "My first impression: \"{{phrase}}\" #FirstImpressionAI"

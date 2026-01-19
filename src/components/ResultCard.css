@@ -39,49 +39,66 @@
 }
 
 .image-placeholder {
-  font-size: 5rem;
+  font-size: 2rem; /* Smaller font for placeholders in grid */
   font-weight: 700;
   color: var(--text-color-secondary);
 }
 
-.celebrity-wrapper {
+.celebrity-view-wrapper {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: auto; /* Override fixed height */
-  padding: 20px 0;
-  border-radius: 20px; /* Match the card's border-radius */
-  background: var(--background-color); /* Slightly different background */
-  margin-bottom: 25px; /* Same as original image-wrapper */
+  width: 100%;
+  margin-bottom: 25px;
 }
 
-.celebrity-text {
-  font-size: 0.9rem;
-  color: var(--text-color-secondary);
-  margin: 1rem;
-  max-width: 80%;
-}
-
-.find-celebrity-button {
-  padding: 10px 20px;
-  font-size: 0.9rem;
+.celebrity-headline {
+  font-size: 1rem;
   font-weight: 600;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  background-color: var(--component-background);
-  box-shadow: 3px 3px 6px var(--shadow-dark), -3px -3px 6px var(--shadow-light);
-  color: var(--primary-color);
+  color: var(--text-color-secondary);
+  margin-bottom: 1rem;
 }
 
-.find-celebrity-button:hover {
-  transform: translateY(-1px);
+.celebrity-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
-.find-celebrity-button:active {
+.celebrity-image-item,
+.celebrity-image-placeholder {
+  width: 100%;
+  padding-bottom: 100%; /* Creates a square aspect ratio */
+  position: relative;
+  border-radius: 10px;
+  background: var(--background-color);
   box-shadow: inset 3px 3px 6px var(--shadow-dark), inset -3px -3px 6px var(--shadow-light);
-  transform: translateY(0px);
+  overflow: hidden;
+}
+
+.celebrity-image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.celebrity-image-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.celebrity-disclaimer {
+  font-size: 0.8rem;
+  color: var(--text-color-secondary);
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0 10px;
 }
 
 .core-phrase {

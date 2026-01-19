@@ -50,13 +50,17 @@ const HomePage = ({ setImage, analysisType, setAnalysisType }) => {
           />
           {t('home.character')}
         </label>
-        <label className="analysis-type-label">
+        <label 
+          className={`analysis-type-label ${true ? 'disabled' : ''}`} 
+          title="백엔드 준비 후 활성화될 예정입니다."
+        >
           <input 
             type="radio" 
             name="analysisType" 
             value="celebrity" 
             checked={analysisType === 'celebrity'} 
             onChange={handleAnalysisTypeChange} 
+            disabled={true}
           />
           {t('home.celebrity')}
         </label>

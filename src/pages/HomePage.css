@@ -76,6 +76,11 @@
   user-select: none; /* Prevent text selection */
 }
 
+.analysis-type-label.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .analysis-type-label input[type="radio"] {
   display: none; /* Hide the default radio button */
 }

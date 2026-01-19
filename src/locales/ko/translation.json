@@ -17,7 +17,7 @@
     "hashtags": "#FirstLine #첫인상한줄 #AI첫인상 #프사테스트",
     "shareButton": "공유",
     "retryButton": "다시 찍기",
-    "findCelebrityButton": "닮은 연예인 외부에서 보기"
+    "celebrityDisclaimer": "이 결과는 AI가 이미지 분위기를 기반으로 비슷한 스타일의 이미지를 검색해 보여주는 참고용입니다."
   },
   "share": {
     "text": "내 첫인상: \"{{phrase}}\" #첫인상AI"
