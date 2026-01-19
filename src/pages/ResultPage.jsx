@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ResultCard from '../components/ResultCard';
 
-const ResultPage = ({ image, setImage }) => {
+const ResultPage = ({ image, setImage, analysisType }) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
@@ -21,7 +21,7 @@ const ResultPage = ({ image, setImage }) => {
     );
   }
 
-  return <ResultCard image={image} onRetry={handleRetry} />;
+  return <ResultCard image={image} onRetry={handleRetry} analysisType={analysisType} />;
 };
 
 export default ResultPage;

@@ -6,14 +6,18 @@
   "home": {
     "title": "First Impression AI",
     "subtitle": "Discover your first impression with just one photo!",
-    "uploadButton": "Upload Photo"
+    "uploadButton": "Upload Photo",
+    "myPhoto": "My Photo",
+    "character": "Character",
+    "celebrity": "Celebrity"
   },
   "result": {
     "noImageUploaded": "No image uploaded.",
     "goBackAndUpload": "Go back and upload",
     "hashtags": "#FirstLine #FirstImpressionLine #AIFirstImpression #ProfileTest",
     "shareButton": "Share",
-    "retryButton": "Try Again"
+    "retryButton": "Try Again",
+    "findCelebrityButton": "View similar celebrity externally"
   },
   "share": {
     "text": "My first impression: \"{{phrase}}\" #FirstImpressionAI"

@@ -6,14 +6,18 @@
   "home": {
     "title": "첫인상 AI",
     "subtitle": "사진 한 장으로 당신의 첫인상을 확인해보세요!",
-    "uploadButton": "사진 업로드"
+    "uploadButton": "사진 업로드",
+    "myPhoto": "내 사진",
+    "character": "캐릭터",
+    "celebrity": "연예인"
   },
   "result": {
     "noImageUploaded": "사진이 업로드되지 않았습니다.",
     "goBackAndUpload": "돌아가서 사진 업로드",
     "hashtags": "#FirstLine #첫인상한줄 #AI첫인상 #프사테스트",
     "shareButton": "공유",
-    "retryButton": "다시 찍기"
+    "retryButton": "다시 찍기",
+    "findCelebrityButton": "닮은 연예인 외부에서 보기"
   },
   "share": {
     "text": "내 첫인상: \"{{phrase}}\" #첫인상AI"

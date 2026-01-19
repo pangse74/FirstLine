@@ -56,6 +56,41 @@
   transform: translateY(1px);
 }
 
+.analysis-type-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.analysis-type-label {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color-secondary);
+  background-color: var(--component-background);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 3px 3px 6px var(--shadow-dark), -3px -3px 6px var(--shadow-light);
+  user-select: none; /* Prevent text selection */
+}
+
+.analysis-type-label input[type="radio"] {
+  display: none; /* Hide the default radio button */
+}
+
+.analysis-type-label input[type="radio"]:checked + span {
+  /* This is if we wrap the text in a span, but for now we'll style the label */
+}
+
+/* Style the label when its radio button is checked */
+.analysis-type-label:has(input[type="radio"]:checked) {
+  color: var(--primary-color);
+  box-shadow: inset 2px 2px 4px var(--shadow-dark), inset -2px -2px 4px var(--shadow-light);
+}
+
+
 /* Responsive adjustments */
 @media screen and (max-width: 600px) {
   .title {

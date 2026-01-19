@@ -12,6 +12,7 @@ import './App.css';
 
 function App() {
   const [image, setImage] = useState(null);
+  const [analysisType, setAnalysisType] = useState('my-photo'); // 'my-photo', 'character', 'celebrity'
 
   return (
     <HashRouter>
@@ -21,8 +22,8 @@ function App() {
           <ThemeToggle />
         </div>
         <Routes>
-          <Route path="/" element={<HomePage setImage={setImage} />} />
-          <Route path="/result" element={<ResultPage image={image} setImage={setImage} />} />
+          <Route path="/" element={<HomePage setImage={setImage} analysisType={analysisType} setAnalysisType={setAnalysisType} />} />
+          <Route path="/result" element={<ResultPage image={image} setImage={setImage} analysisType={analysisType} />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsOfService />} />

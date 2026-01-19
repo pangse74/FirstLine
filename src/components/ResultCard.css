@@ -38,6 +38,52 @@
   object-fit: cover;
 }
 
+.image-placeholder {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--text-color-secondary);
+}
+
+.celebrity-wrapper {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Override fixed height */
+  padding: 20px 0;
+  border-radius: 20px; /* Match the card's border-radius */
+  background: var(--background-color); /* Slightly different background */
+  margin-bottom: 25px; /* Same as original image-wrapper */
+}
+
+.celebrity-text {
+  font-size: 0.9rem;
+  color: var(--text-color-secondary);
+  margin: 1rem;
+  max-width: 80%;
+}
+
+.find-celebrity-button {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: var(--component-background);
+  box-shadow: 3px 3px 6px var(--shadow-dark), -3px -3px 6px var(--shadow-light);
+  color: var(--primary-color);
+}
+
+.find-celebrity-button:hover {
+  transform: translateY(-1px);
+}
+
+.find-celebrity-button:active {
+  box-shadow: inset 3px 3px 6px var(--shadow-dark), inset -3px -3px 6px var(--shadow-light);
+  transform: translateY(0px);
+}
+
 .core-phrase {
   font-size: 2rem;
   font-weight: 700;
