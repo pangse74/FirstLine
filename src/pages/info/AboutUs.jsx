@@ -11,6 +11,11 @@ const AboutUs = () => {
       <p className="info-page-paragraph">{t('about.paragraph1')}</p>
       <p className="info-page-paragraph">{t('about.paragraph2')}</p>
       <p className="info-page-paragraph">{t('about.paragraph3')}</p>
+
+      <h2 className="info-page-subtitle">{t('about.publisherInfo.title')}</h2>
+      <p className="info-page-paragraph">{t('about.publisherInfo.serviceName')}</p>
+      <p className="info-page-paragraph">{t('about.publisherInfo.operator')}</p>
+      <p className="info-page-paragraph">{t('about.publisherInfo.contact')}</p>
     </div>
   );
 };

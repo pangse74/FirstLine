@@ -29,7 +29,13 @@
     "title": "Giới thiệu dịch vụ FirstLine",
     "paragraph1": "FirstLine là một dịch vụ sáng tạo phân tích ảnh của bạn bằng AI để đưa ra một câu nhận xét ngắn gọn về ấn tượng đầu tiên. Dịch vụ này được thiết kế để giúp bạn khám phá hình ảnh của mình và chia sẻ với bạn bè một cách nhẹ nhàng và vui vẻ, thay vì phân tích hoặc chẩn đoán phức tạp.",
     "paragraph2": "Chúng tôi bắt đầu dịch vụ này từ sự tò mò về ấn tượng đầu tiên mà mọi người để lại cho nhau. FirstLine sử dụng công nghệ AI để giúp bạn khám phá sự quyến rũ của mình và tận hưởng niềm vui hiểu bản thân từ một góc nhìn mới. Tất cả các nhận xét được xây dựng tích cực và hài hước, đảm bảo mang lại trải nghiệm thú vị.",
-    "paragraph3": "FirstLine sẽ làm cho những khoảnh khắc quý giá của bạn trở nên đặc biệt hơn và trở thành khởi đầu cho những cuộc trò chuyện mới trên mạng xã hội. Hãy khám phá ấn tượng đầu tiên của bạn ngay bây giờ!"
+    "paragraph3": "FirstLine sẽ làm cho những khoảnh khắc quý giá của bạn trở nên đặc biệt hơn và trở thành khởi đầu cho những cuộc trò chuyện mới trên mạng xã hội. Hãy khám phá ấn tượng đầu tiên của bạn ngay bây giờ!",
+    "publisherInfo": {
+      "title": "Thông tin nhà xuất bản",
+      "serviceName": "Tên dịch vụ: FirstLine",
+      "operator": "Người điều hành: FirstLine Team",
+      "contact": "Liên hệ: 1974mds@gmail.com"
+    }
   },
   "privacy": {
     "title": "Chính sách bảo mật",

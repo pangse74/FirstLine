@@ -29,7 +29,13 @@
     "title": "About FirstLine Service",
     "paragraph1": "FirstLine \"the Service\" is an innovative service that analyzes your photo using AI to provide a one-line first impression. It's designed to help you explore your image and share it with friends in a lighthearted and fun way, rather than for complex analysis or diagnosis.",
     "paragraph2": "We started this service out of curiosity about the first impressions people leave on each other. FirstLine uses AI technology to help you discover your charm and enjoy understanding yourself from a new perspective. All phrases are crafted to be positive and humorous, ensuring a pleasant experience.",
-    "paragraph3": "FirstLine will make your precious moments even more special and serve as a new conversation starter on social media. Discover your first impression right now!"
+    "paragraph3": "FirstLine will make your precious moments even more special and serve as a new conversation starter on social media. Discover your first impression right now!",
+    "publisherInfo": {
+      "title": "Publisher Information",
+      "serviceName": "Service Name: FirstLine",
+      "operator": "Operator: FirstLine Team",
+      "contact": "Contact: 1974mds@gmail.com"
+    }
   },
   "privacy": {
     "title": "Privacy Policy",

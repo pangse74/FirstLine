@@ -11,34 +11,23 @@ FirstLine is a web application that generates a "one-line first impression" from
 
 ## 2. Implemented Features
 
-*(This section will be updated as features are developed.)*
+- **MVP Frontend Prototype:**
+    - **Project Setup & Foundation:** Created `blueprint.md` to track project progress.
+    - **Main Page UI:** Created a landing/upload page component (`HomePage.jsx`) with a clean layout.
+    - **Image Handling:** Added functionality to select a local image file and store it in the application's state.
+    - **Result Card Component:** Created a reusable `ResultCard.jsx` component to display the user's image and a randomly selected "first impression" phrase.
+    - **Application Logic & Routing:** Used `react-router-dom` to manage navigation between the upload page and the results page.
+    - **Modern Styling:** Styled all components to be visually appealing, responsive, and mobile-first.
+    - **'Try Again' Functionality:** Implemented a button to allow the user to return to the upload page.
+- **Publisher Information:** Added publisher information to the "About Us" page to comply with AdSense policies. This includes the service name, operator, and contact information, and has been internationalized into all supported languages.
 
 ## 3. Current Development Plan
 
-The immediate goal is to build a Minimum Viable Product (MVP) prototype focusing on the core user experience.
+The project is currently in a maintenance phase, addressing policy compliance issues.
 
-### Phase 1: MVP Frontend Prototype
+### Phase 2: Policy Compliance
 
--   **[pending] Task 1: Project Setup & Foundation**
-    -   Create `blueprint.md` to track project progress.
--   **[pending] Task 2: Build the Main Page UI**
-    -   Create a landing/upload page component (`HomePage.jsx`).
-    -   Design a clean layout with a title, a brief description, and a prominent photo upload area.
--   **[pending] Task 3: Implement Image Handling**
-    -   Add functionality to select a local image file.
-    -   Store the selected image in the application's state and display a preview.
--   **[pending] Task 4: Develop the Result Card Component**
-    -   Create a reusable `ResultCard.jsx` component.
-    -   The card will display:
-        -   The user's uploaded image (with a circular crop).
-        -   A randomly selected "first impression" phrase from the provided list of 30.
-        -   A corresponding sub-text explanation.
-        -   Mock social media share buttons.
--   **[pending] Task 5: Implement Application Logic & Routing**
-    -   Use `react-router-dom` to manage navigation between the upload page and the results page.
-    -   On image upload, navigate to the result page and display the `ResultCard` with the generated content.
--   **[pending] Task 6: Apply Modern Styling**
-    -   Style all components to be visually appealing, responsive, and mobile-first.
-    -   Incorporate modern design principles (typography, spacing, color palette, interactive effects).
--   **[pending] Task 7: Add 'Try Again' Functionality**
-    -   Implement a button to allow the user to return to the upload page to start over.
+-   **[completed] Task 1: Add Publisher Information**
+    -   Add a "Publisher Information" section to the "About Us" page.
+    -   Include "Service Name," "Operator," and "Contact" details.
+    -   Translate the new information into all supported languages (English, Spanish, Japanese, Korean, Vietnamese).
