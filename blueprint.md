@@ -22,9 +22,9 @@ This application is a personality analysis tool that generates a descriptive phr
 *   **Removed "Image Capture In Progress" Popup**: Removed the intrusive `alert` popup that displayed "이미지 캡처 중..." during the image download process, as per user feedback. The visual feedback on the button itself (disabled state and text change) remains.
 *   **Dynamic Image Capture Width**: Removed the fixed width from the image capture container in `src/components/ResultCard.jsx`, allowing the generated image to automatically adjust its width to the content, as per user request.
 *   **Visual Enhancements for Captured Images**: Applied several styling adjustments to the image capture process in `src/components/ResultCard.jsx` to improve visual proportionality:
-    *   Fine-tuned the image width from `80%` to `75%`.
-    *   Fine-tuned the font size of the core phrase from `2.2rem` to `2.3rem`.
-    *   Fine-tuned the font size of the explanation phrase from `1.1rem` to `1.2rem`.
+    *   Fine-tuned the image width from `75%` to `70%`.
+    *   Fine-tuned the font size of the core phrase from `2.3rem` to `2.4rem`.
+    *   Fine-tuned the font size of the explanation phrase from `1.2rem` to `1.3rem`.
     *   Set the background color of the captured image to white.
 
 # Current Task: Implement Sharing Feature

@@ -88,20 +88,20 @@ const ResultCard = ({ image, onRetry, analysisType }) => {
 
         const imageWrapper = clonedNode.querySelector('.image-wrapper');
         if (imageWrapper) {
-          imageWrapper.style.width = '75%'; // Make image slightly smaller
+          imageWrapper.style.width = '70%'; // Make image slightly smaller
           imageWrapper.style.height = 'auto';
           imageWrapper.style.margin = '0 auto 20px auto';
         }
 
         const h2 = clonedNode.querySelector('.core-phrase');
         if (h2) {
-          h2.style.fontSize = '2.3rem'; // Slightly larger font size
+          h2.style.fontSize = '2.4rem'; // Slightly larger font size
           h2.style.textAlign = 'center';
         }
 
         const p = clonedNode.querySelector('.explain-phrase');
         if (p) {
-          p.style.fontSize = '1.2rem'; // Slightly larger font size
+          p.style.fontSize = '1.3rem'; // Slightly larger font size
           p.style.textAlign = 'center';
         }
 
