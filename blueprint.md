@@ -27,6 +27,7 @@ This application is a personality analysis tool that generates a descriptive phr
     *   Fine-tuned the font size of the explanation phrase from `1.3rem` to `1.4rem`.
     *   Set the background color of the captured image to white.
 *   **Interactive Image Capture Settings**: Implemented interactive UI controls (sliders) in `src/components/ResultCard.jsx` to allow users to dynamically adjust the image width, core phrase font size, and explanation phrase font size for the captured image. These settings are stored in `localStorage` for persistence across sessions.
+*   **Application Title Update**: Changed the web page title from "myapp" to "첫인상 AI" in `index.html` for accurate branding.
 
 # Current Task: Implement Sharing Feature
 
