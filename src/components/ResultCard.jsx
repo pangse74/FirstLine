@@ -41,6 +41,15 @@ const ResultCard = ({ image, onRetry, analysisType }) => {
   const [celebrityImages, setCelebrityImages] = useState([]);
   const [isLoadingCelebImages, setIsLoadingCelebImages] = useState(true);
   const [isDownloading, setIsDownloading] = useState(false);
+  const [imageWidthPercentage, setImageWidthPercentage] = useState(() => {
+    return parseFloat(localStorage.getItem('captureImageWidth')) || 65;
+  });
+  const [corePhraseFontSizeRem, setCorePhraseFontSizeRem] = useState(() => {
+    return parseFloat(localStorage.getItem('captureCorePhraseFontSize')) || 2.5;
+  });
+  const [explainPhraseFontSizeRem, setExplainPhraseFontSizeRem] = useState(() => {
+    return parseFloat(localStorage.getItem('captureExplainPhraseFontSize')) || 1.4;
+  });
 
   const cardRef = useRef(null);
   const contentToCaptureRef = useRef(null);
@@ -88,20 +97,20 @@ const ResultCard = ({ image, onRetry, analysisType }) => {
 
         const imageWrapper = clonedNode.querySelector('.image-wrapper');
         if (imageWrapper) {
-          imageWrapper.style.width = '65%'; // Make image slightly smaller
+          imageWrapper.style.width = `${imageWidthPercentage}%`; // Use state variable
           imageWrapper.style.height = 'auto';
           imageWrapper.style.margin = '0 auto 20px auto';
         }
 
         const h2 = clonedNode.querySelector('.core-phrase');
         if (h2) {
-          h2.style.fontSize = '2.5rem'; // Slightly larger font size
+          h2.style.fontSize = `${corePhraseFontSizeRem}rem`; // Use state variable
           h2.style.textAlign = 'center';
         }
 
         const p = clonedNode.querySelector('.explain-phrase');
         if (p) {
-          p.style.fontSize = '1.4rem'; // Slightly larger font size
+          p.style.fontSize = `${explainPhraseFontSizeRem}rem`; // Use state variable
           p.style.textAlign = 'center';
         }
 
@@ -204,6 +213,63 @@ const handleCopyText = () => {
           <h2 className="core-phrase">{t(`phrases.${selectedPhraseId}.core`)}</h2>
           <p className="explain-phrase">▶ {t(`phrases.${selectedPhraseId}.explain`)}</p>
         </div>
+
+        {/* Capture Settings Controls */}
+        <div className="capture-settings-controls" style={{ padding: '10px', borderTop: '1px solid #eee', marginTop: '10px' }}>
+          <h4 style={{ marginBottom: '10px' }}>Capture Settings</h4>
+          <div style={{ marginBottom: '10px' }}>
+            <label htmlFor="imageWidth">Image Size ({imageWidthPercentage}%)</label>
+            <input
+              id="imageWidth"
+              type="range"
+              min="50"
+              max="100"
+              step="1"
+              value={imageWidthPercentage}
+              onChange={(e) => {
+                const value = parseFloat(e.target.value);
+                setImageWidthPercentage(value);
+                localStorage.setItem('captureImageWidth', value);
+              }}
+              style={{ width: '100%' }}
+            />
+          </div>
+          <div style={{ marginBottom: '10px' }}>
+            <label htmlFor="corePhraseFontSize">Core Phrase Font Size ({corePhraseFontSizeRem}rem)</label>
+            <input
+              id="corePhraseFontSize"
+              type="range"
+              min="1.5"
+              max="3.5"
+              step="0.1"
+              value={corePhraseFontSizeRem}
+              onChange={(e) => {
+                const value = parseFloat(e.target.value);
+                setCorePhraseFontSizeRem(value);
+                localStorage.setItem('captureCorePhraseFontSize', value);
+              }}
+              style={{ width: '100%' }}
+            />
+          </div>
+          <div style={{ marginBottom: '10px' }}>
+            <label htmlFor="explainPhraseFontSize">Explanation Phrase Font Size ({explainPhraseFontSizeRem}rem)</label>
+            <input
+              id="explainPhraseFontSize"
+              type="range"
+              min="0.8"
+              max="2.0"
+              step="0.1"
+              value={explainPhraseFontSizeRem}
+              onChange={(e) => {
+                const value = parseFloat(e.target.value);
+                setExplainPhraseFontSizeRem(value);
+                localStorage.setItem('captureExplainPhraseFontSize', value);
+              }}
+              style={{ width: '100%' }}
+            />
+          </div>
+        </div>
+
         <div className="card-footer">
           <span className="hashtags">{t('result.hashtags')}</span>
           <div className="button-group">

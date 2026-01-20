@@ -26,6 +26,7 @@ This application is a personality analysis tool that generates a descriptive phr
     *   Fine-tuned the font size of the core phrase from `2.4rem` to `2.5rem`.
     *   Fine-tuned the font size of the explanation phrase from `1.3rem` to `1.4rem`.
     *   Set the background color of the captured image to white.
+*   **Interactive Image Capture Settings**: Implemented interactive UI controls (sliders) in `src/components/ResultCard.jsx` to allow users to dynamically adjust the image width, core phrase font size, and explanation phrase font size for the captured image. These settings are stored in `localStorage` for persistence across sessions.
 
 # Current Task: Implement Sharing Feature
 
