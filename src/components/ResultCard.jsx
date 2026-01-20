@@ -79,7 +79,7 @@ const ResultCard = ({ image, onRetry, analysisType }) => {
         const captureContainer = document.createElement('div');
         const clonedNode = elementToCapture.cloneNode(true);
 
-        captureContainer.style.width = '600px';
+
         captureContainer.style.padding = '20px';
         captureContainer.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--component-background').trim() || 'white';
         captureContainer.style.position = 'absolute';

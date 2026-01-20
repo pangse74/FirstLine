@@ -20,6 +20,7 @@ This application is a personality analysis tool that generates a descriptive phr
 *   **Centered Text in Captured Image**: Modified `src/components/ResultCard.jsx` to ensure that the core phrase and its explanation are horizontally centered within the generated image when captured, improving visual presentation.
 *   **Debugged Copy Text Functionality**: Investigated and confirmed the functionality of the "문구 복사" (copy text) button. Added and later removed debugging console logs from `src/components/ResultCard.jsx` for this purpose. The issue of the page not loading was resolved by guiding the user to use the Firebase Studio preview URL instead of `localhost`.
 *   **Removed "Image Capture In Progress" Popup**: Removed the intrusive `alert` popup that displayed "이미지 캡처 중..." during the image download process, as per user feedback. The visual feedback on the button itself (disabled state and text change) remains.
+*   **Dynamic Image Capture Width**: Removed the fixed width from the image capture container in `src/components/ResultCard.jsx`, allowing the generated image to automatically adjust its width to the content, as per user request.
 
 # Current Task: Implement Sharing Feature
 
