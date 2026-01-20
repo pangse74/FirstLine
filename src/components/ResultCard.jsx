@@ -72,7 +72,6 @@ const ResultCard = ({ image, onRetry, analysisType }) => {
     if (!contentToCaptureRef.current) return;
 
     setIsDownloading(true);
-    alert(t('result.captureInProgress'));
 
     try {
         const elementToCapture = contentToCaptureRef.current;
