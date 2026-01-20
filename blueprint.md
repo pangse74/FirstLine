@@ -1,44 +1,83 @@
-# Overview
+# Blueprint for FirstLine Application
 
-This application is a personality analysis tool that generates a descriptive phrase based on an uploaded image. It offers several analysis types, such as generating a character or finding similar celebrity images. The core of the application is to provide a fun, shareable result to the user.
+## Overview
 
-# Implemented Features
+This blueprint outlines the design, features, and modifications implemented in the FirstLine React application. The primary goal of recent changes was to address a Google AdSense "no publisher content" warning by enriching the application with relevant and valuable content. This was achieved by integrating a blog section focused on AI models and training methodologies, and by improving the content density of the main landing page. A dedicated "Help" section has also been added, leveraging the blog content to provide informative assistance.
 
-*   **Image-based Analysis**: Users can upload an image to receive a personality analysis.
-*   **Multiple Analysis Types**: The app supports different kinds of analysis, including 'character' and 'celebrity' look-a-likes.
-*   **Dynamic Phrase Generation**: A random phrase is selected from a predefined list to describe the user's image.
-*   **Localization**: The UI is translated into multiple languages using `i18next`.
-*   **Theming**: The application supports light and dark modes.
-*   **Share/Download Results**: Users can download an image of their result card for sharing.
+## Detailed Outline
 
-# Recent Enhancements & Fixes
+### Application Type
+Single Page Application (SPA) built with React and Vite, using client-side routing.
 
-*   **Syntax Fix in `ResultCard.jsx`**: Resolved a critical syntax error in `src/components/ResultCard.jsx` by removing a misplaced `catch` block that was causing compilation failures.
-*   **Localized Download Progress Feedback**:
-    *   Added Korean translation keys (`captureInProgress`, `captureSuccess`) to `src/locales/ko/translation.json` for enhanced user experience.
-    *   Integrated a download progress indicator in `src/components/ResultCard.jsx`'s `handleDownloadImage` function, displaying messages in Korean during image capture and on successful completion. The download button is also disabled during this process.
-*   **Centered Text in Captured Image**: Modified `src/components/ResultCard.jsx` to ensure that the core phrase and its explanation are horizontally centered within the generated image when captured, improving visual presentation.
-*   **Debugged Copy Text Functionality**: Investigated and confirmed the functionality of the "문구 복사" (copy text) button. Added and later removed debugging console logs from `src/components/ResultCard.jsx` for this purpose. The issue of the page not loading was resolved by guiding the user to use the Firebase Studio preview URL instead of `localhost`.
-*   **Removed "Image Capture In Progress" Popup**: Removed the intrusive `alert` popup that displayed "이미지 캡처 중..." during the image download process, as per user feedback. The visual feedback on the button itself (disabled state and text change) remains.
-*   **Dynamic Image Capture Width**: Removed the fixed width from the image capture container in `src/components/ResultCard.jsx`, allowing the generated image to automatically adjust its width to the content, as per user request.
-*   **Visual Enhancements for Captured Images**: Applied several styling adjustments to the image capture process in `src/components/ResultCard.jsx` to improve visual proportionality:
-    *   Fine-tuned the image width from `70%` to `65%`.
-    *   Fine-tuned the font size of the core phrase from `2.4rem` to `2.5rem`.
-    *   Fine-tuned the font size of the explanation phrase from `1.3rem` to `1.4rem`.
-    *   Set the background color of the captured image to white.
-*   **Interactive Image Capture Settings**: Implemented interactive UI controls (sliders) in `src/components/ResultCard.jsx` to allow users to dynamically adjust the image width, core phrase font size, and explanation phrase font size for the captured image. These settings are stored in `localStorage` for persistence across sessions.
-*   **Application Title Update**: Changed the web page title from "myapp" to "첫인상 AI" in `index.html` for accurate branding.
+### Core Features
+- AI-powered first impression analysis (main functionality).
+- Image upload and result display (`HomePage`, `ResultPage`).
+- Multi-language support (i18n with `react-i18next`).
+- Theme toggling (`ThemeToggle`).
+- Information pages: About Us, Privacy Policy, Terms of Service.
+- **NEW:** Blog section with articles on AI/ML.
+- **NEW:** Help section that integrates blog content.
 
-# Current Task: Implement Sharing Feature
+### Technologies Used
+- **Frontend:** React, `react-router-dom`, `react-i18next`
+- **Build Tool:** Vite
+- **Styling:** CSS Modules (implied by existing `.css` files per component)
+- **Firebase Studio Environment:** Integrated development environment.
 
-The user wants to be able to share the result card, which includes an image and a descriptive phrase.
+### Project Structure (relevant parts)
+- `src/App.jsx`: Main application component, handles routing and global layout.
+- `src/pages/HomePage.jsx`: Landing page for user interaction and now features blog post excerpts.
+- `src/pages/ResultPage.jsx`: Displays analysis results.
+- `src/pages/info/`: Contains static information pages (`AboutUs.jsx`, `PrivacyPolicy.jsx`, `TermsOfService.jsx`).
+- `src/pages/BlogPage.jsx`: Lists all blog posts.
+- `src/pages/BlogPost.jsx`: Displays individual blog posts.
+- `src/pages/info/HelpPage.jsx`: Displays help topics, which are dynamically populated from blog posts.
+- `src/data/blog/blogPosts.js`: Stores blog post content.
+- `src/locales/{lang}/translation.json`: Translation files for internationalization.
 
-## Plan
+### Styling & Design Principles
+- Modern and clean UI, with responsive design considerations.
+- Theming support (light/dark mode).
+- Integration of custom components (`Footer`, `LanguageSwitcher`, `ThemeToggle`).
 
-1.  **[COMPLETED]** Identify the component responsible for displaying the result (`ResultCard.jsx`).
-2.  **[COMPLETED]** Locate the part of the component that needs to be captured. A `div` with `contentToCaptureRef` was found, which is perfect for this purpose.
-3.  **[COMPLETED]** Implement the `handleShareOrDownload` function to capture the `contentToCaptureRef` element using the `html2canvas` library.
-4.  **[COMPLETED]** The captured content will be converted to a PNG image.
-5.  **[COMPLETED]** A download of the image will be triggered in the user's browser.
-6.  **[COMPLETED]** Run build to verify changes.
-7.  **[COMPLETED]** Update blueprint.md.
+### Routing and Navigation
+- Implemented using `react-router-dom` (`HashRouter`).
+- Routes defined for home, result, info pages, blog, and help pages.
+- Global navigation links for the blog and help are present in the top-right `utility-buttons-container`.
+
+## Current Changes ( addressing AdSense "no content" warning and adding Help section)
+
+### Purpose
+To resolve the Google AdSense warning "Google ads on screens with no publisher content" by increasing the overall content richness and relevance within the FirstLine application. Additionally, to provide a user-friendly help section that leverages this new content.
+
+### Plan and Steps
+1.  **Install `react-router-dom`:** Ensured the routing library is available for creating new pages. (Already installed in this session).
+2.  **Create Blog Page Components:**
+    *   `src/pages/BlogPage.jsx`: A component to list all available blog posts, with links to individual articles.
+    *   `src/pages/BlogPost.jsx`: A component to render the full content of a selected blog post dynamically using `useParams`.
+3.  **Create Blog Content Data:**
+    *   `src/data/blog/blogPosts.js`: A JavaScript file exporting an array of blog post objects. Each object contains an `id`, `title`, `date`, `excerpt`, and `content` (HTML formatted for `dangerouslySetInnerHTML`). Two example posts related to AI models and training strategies were added.
+4.  **Integrate Blog into `App.jsx`:**
+    *   Imported `BlogPage` and `BlogPost` components.
+    *   Added new `<Route>` definitions for `/blog` (Blog listing) and `/blog/:id` (Individual blog post).
+    *   Added a `<Link to="/blog">Blog</Link>` element to the main application navigation within the `utility-buttons-container` for easy access.
+5.  **Enhance `HomePage.jsx` Content:**
+    *   Imported `blogPosts` data.
+    *   Added a new "Latest Insights" section below the upload container.
+    *   This section displays the excerpts of the two most recent blog posts, each with a link to its full article.
+    *   Included a "View All Posts" link to navigate to the `BlogPage`.
+6.  **Create Help Page Component:**
+    *   `src/pages/info/HelpPage.jsx`: A component designed to serve as a help section. It dynamically lists the titles and excerpts of the `blogPosts` as help topics, with links to their full articles, effectively reusing the blog content as help documentation.
+7.  **Integrate Help Page into `App.jsx`:**
+    *   Imported `HelpPage` component.
+    *   Added a new `<Route>` definition for `/help`.
+    *   Added a `<Link to="/help">Help</Link>` element to the main application navigation within the `utility-buttons-container`.
+8.  **Position Help Button:**
+    *   Modified `src/App.css` to change the `utility-buttons-container`'s CSS from `left: 20px;` to `right: 20px;` to place the help and other utility buttons in the top-right corner.
+9.  **Update Translation Files:**
+    *   Modified `src/locales/ko/translation.json` and `src/locales/en/translation.json` to include new translation keys: `home.latestInsights`, `common.readMore`, `home.viewAllPosts`, `help.title`, `help.description`, `help.topics`, and `help.contactSupport` to support the new blog and help sections.
+10. **Fix JSON Syntax Error:**
+    *   Corrected an extra comma in `src/locales/ko/translation.json` that was causing a JSON parsing error.
+
+### Expected Outcome
+The application now features a dedicated blog section with informative articles on AI/ML topics, and the home page presents engaging excerpts from these articles. A "Help" button in the top-right corner navigates to a new page (`/help`) that clearly presents these blog posts as help topics. This significantly increases the amount of unique and relevant publisher content, making the site more compliant with Google AdSense policies regarding content richness, and provides a user-friendly help resource.

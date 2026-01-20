@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; // Removed Link import as it's no longer needed for blog excerpts
 import { useTranslation } from 'react-i18next';
+// Removed import of blogPosts as it's no longer used
 import './HomePage.css';
 
 const HomePage = ({ setImage, analysisType, setAnalysisType }) => {
@@ -83,3 +84,4 @@ const HomePage = ({ setImage, analysisType, setAnalysisType }) => {
 };
 
 export default HomePage;
+

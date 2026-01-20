@@ -15,6 +15,7 @@ const Footer = () => {
         <Link to="/terms" className="footer-link">{t('footer.terms')}</Link>
       </nav>
       <p className="footer-copyright">&copy; {new Date().getFullYear()} {t('appTitle')}. {t('footer.rightsReserved')}</p>
+      <Link to="/help" className="footer-link">{t('common.help')}</Link> {/* Add Help link to footer */}
     </footer>
   );
 };

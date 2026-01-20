@@ -1,7 +1,7 @@
 .utility-buttons-container {
   position: fixed;
   top: 20px;
-  left: 20px;
+  right: 20px; /* Changed from left to right */
   display: flex;
   gap: 10px;
   z-index: 1000;
@@ -10,9 +10,9 @@
 
 @media screen and (max-width: 600px) {
   .utility-buttons-container {
-    flex-direction: column; /* Stack vertically */
-    left: 10px;
+    right: 10px; /* Adjusted for mobile */
     top: 10px;
     gap: 5px;
+    /* Removed flex-direction: column to keep it horizontal */
   }
 }
