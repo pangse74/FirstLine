@@ -1,33 +1,35 @@
-# Blueprint: FirstLine (퍼스트라인)
+# Overview
 
-## 1. Overview
+This application is a personality analysis tool that generates a descriptive phrase based on an uploaded image. It offers several analysis types, such as generating a character or finding similar celebrity images. The core of the application is to provide a fun, shareable result to the user.
 
-FirstLine is a web application that generates a "one-line first impression" from a user's photo. The goal is to create a fun, lighthearted, and highly shareable experience, encouraging viral spread on social media.
+# Implemented Features
 
-### Core User Flow
-1.  **Upload:** User uploads a photo of their face.
-2.  **Analyze:** The application presents a first impression.
-3.  **Share:** The user receives a visually appealing "Result Card" that they can share on social media.
+*   **Image-based Analysis**: Users can upload an image to receive a personality analysis.
+*   **Multiple Analysis Types**: The app supports different kinds of analysis, including 'character' and 'celebrity' look-a-likes.
+*   **Dynamic Phrase Generation**: A random phrase is selected from a predefined list to describe the user's image.
+*   **Localization**: The UI is translated into multiple languages using `i18next`.
+*   **Theming**: The application supports light and dark modes.
+*   **Share/Download Results**: Users can download an image of their result card for sharing.
 
-## 2. Implemented Features
+# Recent Enhancements & Fixes
 
-- **MVP Frontend Prototype:**
-    - **Project Setup & Foundation:** Created `blueprint.md` to track project progress.
-    - **Main Page UI:** Created a landing/upload page component (`HomePage.jsx`) with a clean layout.
-    - **Image Handling:** Added functionality to select a local image file and store it in the application's state.
-    - **Result Card Component:** Created a reusable `ResultCard.jsx` component to display the user's image and a randomly selected "first impression" phrase.
-    - **Application Logic & Routing:** Used `react-router-dom` to manage navigation between the upload page and the results page.
-    - **Modern Styling:** Styled all components to be visually appealing, responsive, and mobile-first.
-    - **'Try Again' Functionality:** Implemented a button to allow the user to return to the upload page.
-- **Publisher Information:** Added publisher information to the "About Us" page to comply with AdSense policies. This includes the service name, operator, and contact information, and has been internationalized into all supported languages.
+*   **Syntax Fix in `ResultCard.jsx`**: Resolved a critical syntax error in `src/components/ResultCard.jsx` by removing a misplaced `catch` block that was causing compilation failures.
+*   **Localized Download Progress Feedback**:
+    *   Added Korean translation keys (`captureInProgress`, `captureSuccess`) to `src/locales/ko/translation.json` for enhanced user experience.
+    *   Integrated a download progress indicator in `src/components/ResultCard.jsx`'s `handleDownloadImage` function, displaying messages in Korean during image capture and on successful completion. The download button is also disabled during this process.
+*   **Centered Text in Captured Image**: Modified `src/components/ResultCard.jsx` to ensure that the core phrase and its explanation are horizontally centered within the generated image when captured, improving visual presentation.
+*   **Debugged Copy Text Functionality**: Investigated and confirmed the functionality of the "문구 복사" (copy text) button. Added and later removed debugging console logs from `src/components/ResultCard.jsx` for this purpose. The issue of the page not loading was resolved by guiding the user to use the Firebase Studio preview URL instead of `localhost`.
 
-## 3. Current Development Plan
+# Current Task: Implement Sharing Feature
 
-The project is currently in a maintenance phase, addressing policy compliance issues.
+The user wants to be able to share the result card, which includes an image and a descriptive phrase.
 
-### Phase 2: Policy Compliance
+## Plan
 
--   **[completed] Task 1: Add Publisher Information**
-    -   Add a "Publisher Information" section to the "About Us" page.
-    -   Include "Service Name," "Operator," and "Contact" details.
-    -   Translate the new information into all supported languages (English, Spanish, Japanese, Korean, Vietnamese).
+1.  **[COMPLETED]** Identify the component responsible for displaying the result (`ResultCard.jsx`).
+2.  **[COMPLETED]** Locate the part of the component that needs to be captured. A `div` with `contentToCaptureRef` was found, which is perfect for this purpose.
+3.  **[COMPLETED]** Implement the `handleShareOrDownload` function to capture the `contentToCaptureRef` element using the `html2canvas` library.
+4.  **[COMPLETED]** The captured content will be converted to a PNG image.
+5.  **[COMPLETED]** A download of the image will be triggered in the user's browser.
+6.  **[COMPLETED]** Run build to verify changes.
+7.  **[COMPLETED]** Update blueprint.md.

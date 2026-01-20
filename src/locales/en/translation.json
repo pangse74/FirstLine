@@ -17,7 +17,16 @@
     "hashtags": "#FirstLine #FirstImpressionLine #AIFirstImpression #ProfileTest",
     "shareButton": "Share",
     "retryButton": "Try Again",
-    "celebrityDisclaimer": "This result is for reference, showing images of a similar style based on the image's mood as searched by AI."
+    "celebrityDisclaimer": "This result is for reference, showing images of a similar style based on the image's mood as searched by AI.",
+    "shareTitle": "My First Impression Result",
+    "shareText": "Check out my first impression analysis from First Impression AI!",
+    "downloadImageButton": "Download Image",
+    "copyTextButton": "Copy Text",
+    "copySuccess": "Text copied to clipboard!",
+    "copyError": "Failed to copy text.",
+    "noImageForDownload": "No image available for download.",
+    "imageLoadError": "Failed to load image for download.",
+    "downloadError": "An error occurred during image download."
   },
   "share": {
     "text": "My first impression: \"{{phrase}}\" #FirstImpressionAI"

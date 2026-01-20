@@ -40,6 +40,7 @@ const ResultCard = ({ image, onRetry, analysisType }) => {
   const [characterImageSrc, setCharacterImageSrc] = useState(null);
   const [celebrityImages, setCelebrityImages] = useState([]);
   const [isLoadingCelebImages, setIsLoadingCelebImages] = useState(true);
+  const [isDownloading, setIsDownloading] = useState(false);
 
   const cardRef = useRef(null);
   const contentToCaptureRef = useRef(null);
@@ -67,12 +68,84 @@ const ResultCard = ({ image, onRetry, analysisType }) => {
     }
   }, [analysisType]);
 
-  const handleShareOrDownload = async () => {
-    // Sharing/downloading is disabled for celebrity view due to complexity
-    if (!contentToCaptureRef.current || analysisType === 'celebrity') return;
-    
-    // ... (rest of the handleShareOrDownload function remains the same)
-  };
+  const handleDownloadImage = async () => {
+    if (!contentToCaptureRef.current) return;
+
+    setIsDownloading(true);
+    alert(t('result.captureInProgress'));
+
+    try {
+        const elementToCapture = contentToCaptureRef.current;
+
+        const captureContainer = document.createElement('div');
+        const clonedNode = elementToCapture.cloneNode(true);
+
+        captureContainer.style.width = '600px';
+        captureContainer.style.padding = '20px';
+        captureContainer.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--component-background').trim() || 'white';
+        captureContainer.style.position = 'absolute';
+        captureContainer.style.left = '-9999px'; 
+        captureContainer.style.borderRadius = '20px';
+
+
+        const h2 = clonedNode.querySelector('.core-phrase');
+        if (h2) {
+          h2.style.fontSize = '2.5rem';
+          h2.style.textAlign = 'center';
+        }
+
+        const p = clonedNode.querySelector('.explain-phrase');
+        if (p) {
+          p.style.fontSize = '1.2rem';
+          p.style.textAlign = 'center';
+        }
+
+
+        captureContainer.appendChild(clonedNode);
+        
+        document.body.appendChild(captureContainer);
+        
+        const canvas = await html2canvas(captureContainer, {
+            useCORS: true,
+            allowTaint: true,
+            scale: window.devicePixelRatio * 2,
+        });
+
+        document.body.removeChild(captureContainer);
+        
+        const imageURL = canvas.toDataURL('image/png');
+        const link = document.createElement('a');
+        link.href = imageURL;
+        link.download = 'firstline-result.png';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        alert(t('result.captureSuccess'));
+    } catch (error) {
+        console.error('Error capturing content:', error);
+        alert(t('result.downloadError')); // Use downloadError for any capture/download issues
+    } finally {
+        setIsDownloading(false);
+    }
+};
+
+const handleCopyText = () => {
+    if (!selectedPhraseId) {
+      return;
+    }
+    const coreText = t(`phrases.${selectedPhraseId}.core`);
+    const explainText = t(`phrases.${selectedPhraseId}.explain`);
+    const hashtags = t('result.hashtags');
+    const textToCopy = `${coreText}\n\n${explainText}\n\n${hashtags}`;
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        alert(t('result.copySuccess'));
+    }, (err) => {
+        console.error('Could not copy text: ', err);
+        alert(t('result.copyError'));
+    });
+};
 
   const RenderContent = () => {
     switch (analysisType) {
@@ -131,10 +204,16 @@ const ResultCard = ({ image, onRetry, analysisType }) => {
           <div className="button-group">
             <button 
               className="share-button" 
-              onClick={handleShareOrDownload}
-              disabled={analysisType === 'celebrity'}
+              onClick={handleDownloadImage}
+              disabled={analysisType === 'celebrity' || isDownloading}
             >
-              {t('result.shareButton')}
+              {isDownloading ? t('result.captureInProgress') : t('result.downloadImageButton')}
+            </button>
+            <button 
+              className="share-button" 
+              onClick={handleCopyText}
+            >
+              {t('result.copyTextButton')}
             </button>
             <button className="retry-button" onClick={onRetry}>
               {t('result.retryButton')}

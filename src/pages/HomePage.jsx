@@ -51,7 +51,7 @@ const HomePage = ({ setImage, analysisType, setAnalysisType }) => {
           {t('home.character')}
         </label>
         <label 
-          className={`analysis-type-label ${true ? 'disabled' : ''}`} 
+          className={`analysis-type-label ${'disabled'}`} 
           title="백엔드 준비 후 활성화될 예정입니다."
         >
           <input 

@@ -13,7 +13,16 @@
     "goBackAndUpload": "Quay lại và tải ảnh lên",
     "hashtags": "#FirstLine #ẤnTượngĐầuTiênMộtDòng #AIẤnTượngĐầuTiên #KiểmTraẢnhĐạiDiện",
     "shareButton": "Chia sẻ",
-    "retryButton": "Thử lại"
+    "retryButton": "Thử lại",
+    "shareTitle": "Kết quả ấn tượng đầu tiên của tôi",
+    "shareText": "Hãy xem phân tích ấn tượng đầu tiên của tôi từ AI ấn tượng đầu tiên!",
+    "downloadImageButton": "Tải xuống hình ảnh",
+    "copyTextButton": "Sao chép văn bản",
+    "copySuccess": "Đã sao chép văn bản vào khay nhớ tạm!",
+    "copyError": "Không thể sao chép văn bản.",
+    "noImageForDownload": "Không có hình ảnh để tải xuống.",
+    "imageLoadError": "Không thể tải hình ảnh để tải xuống.",
+    "downloadError": "Đã xảy ra lỗi trong quá trình tải hình ảnh."
   },
   "share": {
     "text": "Ấn tượng đầu tiên của tôi: \"{{phrase}}\" #ẤnTượngĐầuTiênAI"
@@ -433,7 +442,7 @@
     },
     "phrase96": {
       "core": "Kiểu người có khả năng đồng cảm cảm성",
-      "explain": "Có khả năng sở hữu sự nhạy감 예술과 깊은 공감대."
+      "explain": "Có khả năng sở hữu sự nhạy cảm 예술과 깊은 공감대."
     },
     "phrase97": {
       "core": "Người âm thầm ủng hộ từ bên cạnh",

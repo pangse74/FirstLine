@@ -13,7 +13,16 @@
     "goBackAndUpload": "戻って写真をアップロード",
     "hashtags": "#FirstLine #第一印象一言 #AI第一印象 #プロフィールテスト",
     "shareButton": "共有",
-    "retryButton": "再試行"
+    "retryButton": "再試行",
+    "shareTitle": "私の第一印象の結果",
+    "shareText": "第一印象AIによる私の第一印象分析をチェックしてください！",
+    "downloadImageButton": "画像をダウンロード",
+    "copyTextButton": "テキストをコピー",
+    "copySuccess": "テキストがクリップボードにコピーされました！",
+    "copyError": "テキストのコピーに失敗しました。",
+    "noImageForDownload": "ダウンロード可能な画像がありません。",
+    "imageLoadError": "画像を読み込めませんでした。",
+    "downloadError": "画像のダウンロード中にエラーが発生しました。"
   },
   "share": {
     "text": "私の第一印象: \"{{phrase}}\" #第一印象AI"

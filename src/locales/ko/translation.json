@@ -17,7 +17,18 @@
     "hashtags": "#FirstLine #첫인상한줄 #AI첫인상 #프사테스트",
     "shareButton": "공유",
     "retryButton": "다시 찍기",
-    "celebrityDisclaimer": "이 결과는 AI가 이미지 분위기를 기반으로 비슷한 스타일의 이미지를 검색해 보여주는 참고용입니다."
+    "celebrityDisclaimer": "이 결과는 AI가 이미지 분위기를 기반으로 비슷한 스타일의 이미지를 검색해 보여주는 참고용입니다.",
+    "shareTitle": "내 첫인상 결과",
+    "shareText": "첫인상 AI가 분석한 내 첫인상을 확인해보세요!",
+    "downloadImageButton": "이미지 저장",
+    "copyTextButton": "문구 복사",
+    "copySuccess": "문구가 복사되었습니다!",
+    "copyError": "문구 복사에 실패했습니다.",
+    "noImageForDownload": "다운로드 가능한 이미지가 없습니다.",
+    "imageLoadError": "이미지를 로드하는 데 실패했습니다.",
+    "downloadError": "이미지 다운로드 중 오류가 발생했습니다.",
+    "captureInProgress": "이미지 캡처 중...",
+    "captureSuccess": "이미지가 성공적으로 저장되었습니다."
   },
   "share": {
     "text": "내 첫인상: \"{{phrase}}\" #첫인상AI"
@@ -454,6 +465,10 @@
     "phrase100": {
       "core": "오래 보면 더 따뜻해지는 타입",
       "explain": "시간이 지날수록 진심과 따뜻함이 더 깊게 느껴져요."
+    },
+    "phrase101": {
+      "core": "가까워질수록 매력이 커질 사람",
+      "explain": "첫인상보다 훨씬 다채로운 모습을 가졌어요."
     }
   }
 }
