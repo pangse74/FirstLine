@@ -81,21 +81,27 @@ const ResultCard = ({ image, onRetry, analysisType }) => {
 
 
         captureContainer.style.padding = '20px';
-        captureContainer.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--component-background').trim() || 'white';
+        captureContainer.style.backgroundColor = 'white'; // Changed to white
         captureContainer.style.position = 'absolute';
         captureContainer.style.left = '-9999px'; 
         captureContainer.style.borderRadius = '20px';
 
+        const imageWrapper = clonedNode.querySelector('.image-wrapper');
+        if (imageWrapper) {
+          imageWrapper.style.width = '90%'; // Make image larger
+          imageWrapper.style.height = 'auto';
+          imageWrapper.style.margin = '0 auto 20px auto'; // Center and add margin
+        }
 
         const h2 = clonedNode.querySelector('.core-phrase');
         if (h2) {
-          h2.style.fontSize = '2.5rem';
+          h2.style.fontSize = '2rem'; // Smaller font size
           h2.style.textAlign = 'center';
         }
 
         const p = clonedNode.querySelector('.explain-phrase');
         if (p) {
-          p.style.fontSize = '1.2rem';
+          p.style.fontSize = '1rem'; // Smaller font size
           p.style.textAlign = 'center';
         }
 
