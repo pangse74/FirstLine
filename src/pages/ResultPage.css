@@ -1,0 +1,88 @@
+.result-page-empty {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.empty-state-container {
+  padding: 3rem;
+  border-radius: 15px;
+  background-color: var(--component-background);
+  box-shadow: 7px 7px 14px var(--shadow-dark), -7px -7px 14px var(--shadow-light);
+  margin-bottom: 4rem;
+}
+
+.empty-state-container h2 {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.empty-state-container p {
+  font-size: 1.1rem;
+  color: var(--text-color-secondary);
+  margin-bottom: 2rem;
+}
+
+.upload-link-button {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  background-color: var(--component-background);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light);
+  text-decoration: none;
+}
+
+.upload-link-button:hover {
+  color: var(--primary-color);
+}
+
+.example-results-container h3 {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.examples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.example-card {
+  border-radius: 15px;
+  background-color: var(--component-background);
+  box-shadow: 7px 7px 14px var(--shadow-dark), -7px -7px 14px var(--shadow-light);
+  overflow: hidden;
+  text-align: left;
+}
+
+.example-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.example-text {
+  padding: 1.5rem;
+}
+
+.example-phrase {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.example-explanation {
+  font-size: 1rem;
+  color: var(--text-color-secondary);
+}

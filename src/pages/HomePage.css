@@ -2,10 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-section {
   text-align: center;
-  padding: 20px;
+  padding-bottom: 50px;
+  width: 100%;
 }
 
 .title {
@@ -19,9 +25,13 @@
   font-size: 1.2rem;
   color: var(--text-color-secondary);
   margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .upload-container {
+  margin-top: 2rem;
   width: 280px;
   height: 180px;
   border-radius: 20px;
@@ -31,6 +41,8 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .upload-button {
@@ -73,7 +85,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 3px 3px 6px var(--shadow-dark), -3px -3px 6px var(--shadow-light);
-  user-select: none; /* Prevent text selection */
+  user-select: none;
 }
 
 .analysis-type-label.disabled {
@@ -82,21 +94,154 @@
 }
 
 .analysis-type-label input[type="radio"] {
-  display: none; /* Hide the default radio button */
+  display: none;
 }
 
-.analysis-type-label input[type="radio"]:checked + span {
-  /* This is if we wrap the text in a span, but for now we'll style the label */
-}
-
-/* Style the label when its radio button is checked */
 .analysis-type-label:has(input[type="radio"]:checked) {
   color: var(--primary-color);
   box-shadow: inset 2px 2px 4px var(--shadow-dark), inset -2px -2px 4px var(--shadow-light);
 }
 
+/* New Section Styles */
+.about-service-section,
+.how-to-use-section,
+.latest-insights-section {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+}
+
+.about-service-section h2,
+.how-to-use-section h2,
+.latest-insights-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.about-service-section p {
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color-secondary);
+}
+
+/* How to Use Section */
+.steps-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.step {
+  flex-basis: 300px;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: var(--component-background);
+  box-shadow: 7px 7px 14px var(--shadow-dark), -7px -7px 14px var(--shadow-light);
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 1.5rem auto;
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.step p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color-secondary);
+}
+
+/* Latest Insights Section */
+.insights-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.insight-card {
+  flex-basis: 350px;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: var(--component-background);
+  box-shadow: 7px 7px 14px var(--shadow-dark), -7px -7px 14px var(--shadow-light);
+  text-align: left;
+}
+
+.insight-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.insight-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.read-more-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.view-all-container {
+  margin-top: 3rem;
+}
+
+.view-all-link {
+  padding: 0.8rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  background-color: var(--component-background);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light);
+  text-decoration: none;
+}
+.view-all-link:hover {
+  color: var(--primary-color);
+}
 
 /* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .steps-container, .insights-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .title {
     font-size: 2.5rem;

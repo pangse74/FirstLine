@@ -7,8 +7,27 @@
     "myPhoto": "내 사진",
     "character": "캐릭터",
     "celebrity": "연예인",
-    "latestInsights": "최신 인사이트",
-    "viewAllPosts": "모든 게시물 보기"
+    "latestInsights": "AI 연구소의 최신 업데이트",
+    "viewAllPosts": "모든 게시물 보기",
+    "aboutService": {
+      "title": "첫인상 AI란 무엇인가요?",
+      "paragraph": "당신이 다른 사람에게 어떤 느낌을 주는지 궁금เคย 있나요? FirstLine은 고급 AI를 사용하여 사진 한 장을 분석하고 당신의 첫인상을 매력적인 한 문장으로 알려줍니다. 저희 서비스는 재미와 자기 발견을 위해 설계되었으며, 새롭고 흥미로운 관점에서 자신을 바라볼 수 있도록 돕습니다. 저희는 긍정적이고 힘을 주는 상호작용을 믿으며, 모든 분석은 격려와 통찰을 주도록 만들어졌습니다. 친구나 팔로워들과 대화를 시작하고 소통하는 새로운 방법이 될 것입니다."
+    },
+    "howToUse": {
+      "title": "어떻게 사용하나요?",
+      "step1": {
+        "title": "분석 유형 선택",
+        "description": "내 사진을 분석할지, 캐릭터 이미지를 분석할지 선택하세요."
+      },
+      "step2": {
+        "title": "사진 업로드",
+        "description": "업로드 버튼을 클릭하고, 선명하고 조명이 좋은 자신의 사진이나 캐릭터 사진을 선택하세요."
+      },
+      "step3": {
+        "title": "첫인상 확인하기",
+        "description": "AI가 이미지를 분석하여 당신의 첫인상에 대한 한 줄 요약을 즉시 제공합니다. 세상과 공유해보세요!"
+      }
+    }
   },
   "common": {
     "loading": "로딩 중...",
@@ -16,8 +35,10 @@
     "help": "도움말"
   },
   "result": {
-    "noImageUploaded": "사진이 업로드되지 않았습니다.",
-    "goBackAndUpload": "돌아가서 사진 업로드",
+    "noImageUploaded": "아직 업로드된 사진이 없습니다.",
+    "noImageUploadedDescription": "AI가 생성한 당신의 첫인상을 확인하려면, 홈 페이지로 돌아가 사진을 업로드해주세요.",
+    "goBackAndUpload": "사진 업로드하기",
+    "examplesTitle": "예시 결과 보기",
     "hashtags": "#FirstLine #첫인상한줄 #AI첫인상 #프사테스트",
     "shareButton": "공유",
     "retryButton": "다시 찍기",

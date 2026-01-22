@@ -7,8 +7,27 @@
     "myPhoto": "My Photo",
     "character": "Character",
     "celebrity": "Celebrity",
-    "latestInsights": "Latest Insights",
-    "viewAllPosts": "View All Posts"
+    "latestInsights": "Latest Insights from Our AI Lab",
+    "viewAllPosts": "View All Posts",
+    "aboutService": {
+      "title": "What is First Impression AI?",
+      "paragraph": "Have you ever wondered what vibe you give off? FirstLine uses advanced AI to analyze a single photo and tell you your first impression in one compelling line. Our service is designed for fun and self-discovery, helping you see yourself from a new, intriguing perspective. We believe in positive and uplifting interactions, so all our analyses are crafted to be encouraging and insightful. It's a great conversation starter and a new way to engage with your friends and followers."
+    },
+    "howToUse": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Choose Analysis Type",
+        "description": "Select whether you want to analyze your photo or a character's image."
+      },
+      "step2": {
+        "title": "Upload Your Photo",
+        "description": "Click the upload button and select a clear, well-lit photo of yourself or a character."
+      },
+      "step3": {
+        "title": "Get Your First Impression",
+        "description": "Our AI will analyze the image and instantly provide a one-line summary of your first impression. Share it with the world!"
+      }
+    }
   },
   "common": {
     "loading": "Loading...",
@@ -16,8 +35,10 @@
     "help": "Help"
   },
   "result": {
-    "noImageUploaded": "No image uploaded.",
-    "goBackAndUpload": "Go back and upload",
+    "noImageUploaded": "No image has been uploaded yet.",
+    "noImageUploadedDescription": "To see your AI-generated first impression, please go back to the homepage and upload a photo.",
+    "goBackAndUpload": "Upload a Photo",
+    "examplesTitle": "See Some Examples",
     "hashtags": "#FirstLine #FirstImpressionLine #AIFirstImpression #ProfileTest",
     "shareButton": "Share",
     "retryButton": "Try Again",
