@@ -33,8 +33,10 @@
     }
   },
   "result": {
-    "noImageUploaded": "Chưa tải ảnh lên.",
-    "goBackAndUpload": "Quay lại và tải ảnh lên",
+    "noImageUploaded": "No image has been uploaded yet.",
+    "noImageUploadedDescription": "To see your AI-generated first impression, please go back to the homepage and upload a photo.",
+    "goBackAndUpload": "Upload a Photo",
+    "examplesTitle": "See Some Examples",
     "hashtags": "#FirstLine #ẤnTượngĐầuTiênMộtDòng #AIẤnTượngĐầuTiên #KiểmTraẢnhĐạiDiện",
     "shareButton": "Chia sẻ",
     "retryButton": "Thử lại",
@@ -71,17 +73,142 @@
     }
   },
   "privacy": {
-    "title": "Chính sách bảo mật",
-    "paragraph1": "FirstLine (\"Dịch vụ\") tuân thủ các quy định về bảo vệ thông tin cá nhân theo các luật liên quan, bao gồm Luật xúc tiến sử dụng mạng thông tin và truyền thông và bảo vệ thông tin, v.v., và Luật bảo vệ thông tin cá nhân, đồng thời cam kết bảo vệ tối đa thông tin cá nhân của người dùng.",
-    "paragraph2": "Dịch vụ này chỉ tạm thời sử dụng dữ liệu ảnh của người dùng cho mục đích phân tích AI, và tất cả dữ liệu sẽ bị hủy ngay sau khi hoàn tất phân tích mà không được lưu trữ. Chúng tôi không cung cấp dữ liệu ảnh của người dùng cho bên thứ ba hoặc sử dụng cho bất kỳ mục đích nào khác mà không có sự đồng ý của người dùng.",
-    "paragraph3": "Người dùng có quyền rút lại sự đồng ý sử dụng dữ liệu ảnh của họ và có thể ngừng sử dụng dịch vụ bất cứ lúc nào. Mọi thắc mắc, vui lòng liên hệ [Địa chỉ Email].",
-    "paragraph4": "Chính sách này có thể thay đổi theo luật pháp và chính sách, và mọi thay đổi sẽ được thông báo trong dịch vụ."
+    "title": "Privacy Policy",
+    "introduction": "This Privacy Policy describes how FirstLine (\"we,\" \"us,\" or \"our\") collects, uses, and discloses your information when you use our website and services (collectively, the \"Service\"). We are committed to protecting your privacy and handling your data in an open and transparent manner. By using the Service, you agree to the collection and use of information in accordance with this policy.",
+    "dataCollection": {
+      "title": "1. Data We Collect",
+      "photos": {
+        "title": "1.1 Photos for AI Analysis",
+        "paragraph": "When you use our AI analysis feature, you may upload photos. These photos are processed temporarily and solely for the purpose of generating your first impression analysis. We do NOT store your photos on our servers after the analysis is complete. All uploaded photo data is immediately discarded."
+      },
+      "usageData": {
+        "title": "1.2 Usage Data",
+        "paragraph1": "We may collect information on how the Service is accessed and used (\"Usage Data\"). This Usage Data may include information such as your computer's Internet Protocol address (e.g., IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers, and other diagnostic data.",
+        "paragraph2": "We use Google Analytics to help us understand how our users engage with the Service. Google Analytics collects information anonymously. It reports website trends without identifying individual visitors. You can opt-out of Google Analytics without affecting how you visit our site – for more information on opting out of Google Analytics across all websites you use, visit this Google page: https://tools.google.com/dlpage/gaoptout"
+      },
+      "cookies": {
+        "title": "1.3 Cookies and Tracking Technologies",
+        "paragraph1": "We use cookies and similar tracking technologies to track the activity on our Service and hold certain information. Cookies are files with a small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Other tracking technologies also used are beacons, tags, and scripts to collect and track information and to improve and analyze our Service.",
+        "paragraph2": "You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.",
+        "paragraph3": "For advertising purposes, third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to your website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to your users based on their visit to your sites and/or other sites on the Internet. Users may opt out of personalized advertising by visiting Ads Settings. (Alternatively, you can direct users to opt out of a third-party vendor's use of cookies for personalized advertising by visiting www.aboutads.info/choices/)."
+      }
+    },
+    "dataUse": {
+      "title": "2. How We Use Your Data",
+      "paragraph": "We use the collected data for various purposes:",
+      "list1": "To provide and maintain the Service",
+      "list2": "To notify you about changes to our Service",
+      "list3": "To allow you to participate in interactive features of our Service when you choose to do so",
+      "list4": "To provide customer support",
+      "list5": "To gather analysis or valuable information so that we can improve our Service",
+      "list6": "To monitor the usage of our Service",
+      "list7": "To detect, prevent and address technical issues",
+      "list8": "To deliver personalized advertisements relevant to your interests."
+    },
+    "dataSharing": {
+      "title": "3. Disclosure of Your Data",
+      "photos": "Your uploaded photo data is NOT shared with any third parties. It is processed temporarily for analysis and immediately discarded.",
+      "serviceProviders": "We may employ third-party companies and individuals to facilitate our Service (\"Service Providers\"), to provide the Service on our behalf, to perform Service-related services or to assist us in analyzing how our Service is used. These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.",
+      "legalRequirements": "FirstLine may disclose your Personal Data in the good faith belief that such action is necessary to:",
+      "legalList1": "To comply with a legal obligation",
+      "legalList2": "To protect and defend the rights or property of FirstLine",
+      "legalList3": "To prevent or investigate possible wrongdoing in connection with the Service",
+      "legalList4": "To protect the personal safety of users of the Service or the public",
+      "legalList5": "To protect against legal liability"
+    },
+    "dataSecurity": {
+      "title": "4. Security of Data",
+      "paragraph": "The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security."
+    },
+    "yourRights": {
+      "title": "5. Your Data Protection Rights under GDPR (General Data Protection Regulation)",
+      "paragraph1": "If you are a resident of the European Economic Area (EEA), you have certain data protection rights. FirstLine aims to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data.",
+      "paragraph2": "If you wish to be informed what Personal Data we hold about you and if you want it to be removed from our systems, please contact us.",
+      "paragraph3": "In certain circumstances, you have the following data protection rights:",
+      "list1": "The right to access, update or to delete the information we have on you.",
+      "list2": "The right of rectification.",
+      "list3": "The right to object.",
+      "list4": "The right of restriction.",
+      "list5": "The right to data portability.",
+      "list6": "The right to withdraw consent."
+    },
+    "childrenPrivacy": {
+      "title": "6. Children's Privacy",
+      "paragraph": "Our Service does not address anyone under the age of 13 (\"Children\"). We do not knowingly collect personally identifiable information from anyone under the age of 13. If you are a parent or guardian and you are aware that your Children has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers."
+    },
+    "thirdPartyLinks": {
+      "title": "7. Links to Other Sites",
+      "paragraph": "Our Service may contain links to other sites that are not operated by us. If you click on a third-party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit. We have no control over and assume no responsibility for the content, privacy policies or practices of any third-party sites or services."
+    },
+    "policyChanges": {
+      "title": "8. Changes to This Privacy Policy",
+      "paragraph": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. We will let you know via email and/or a prominent notice on our Service, prior to the change becoming effective and update the \"effective date\" at the top of this Privacy Policy. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page."
+    },
+    "contact": {
+      "title": "9. Contact Us",
+      "paragraph": "If you have any questions about this Privacy Policy, please contact us:",
+      "email": "By email: 1974mds@gmail.com"
+    },
+    "effectiveDate": "Effective Date: January 22, 2026"
   },
   "terms": {
-    "title": "Điều khoản dịch vụ",
-    "paragraph1": "Các điều khoản và điều kiện này (\"Điều khoản\") nhằm mục đích xác định các quyền, nghĩa vụ và trách nhiệm, và các vấn đề cần thiết khác giữa công ty và các thành viên liên quan đến việc sử dụng tất cả các dịch vụ do FirstLine (\"Dịch vụ\") cung cấp.",
-    "paragraph2": "Mục đích của Dịch vụ là cung cấp các nhận xét vui vẻ dựa trên AI về ấn tượng đầu tiên của một cá nhân. Tất cả các kết quả từ Dịch vụ chỉ mang tính giải trí và không thể được sử dụng làm cơ sở cho bất kỳ chẩn đoán hoặc đánh giá nào.",
-    "paragraph3": "Thành viên phải chịu trách nhiệm về mọi kết quả phát sinh từ việc sử dụng Dịch vụ này. Dịch vụ không đảm bảo tính chính xác hoặc độ tin cậy của nội dung và không chịu trách nhiệm về bất kỳ thiệt hại nào phát sinh từ việc sử dụng Dịch vụ."
+    "title": "Terms of Service",
+    "introduction": "Welcome to FirstLine! These Terms of Service (\"Terms\") govern your access to and use of the FirstLine website, services, and applications (collectively, the \"Service\"). By accessing or using the Service, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, please do not use our Service.",
+    "serviceDescription": {
+      "title": "1. Service Description",
+      "paragraph": "FirstLine provides an AI-powered photo analysis service that generates a single-line first impression comment based on uploaded images. Our Service is intended for entertainment purposes only. The results are not to be taken as professional advice, diagnosis, or any form of factual statement about an individual. You acknowledge and agree that all results are for fun and self-exploration."
+    },
+    "userAccounts": {
+      "title": "2. User Accounts",
+      "paragraph": "Currently, FirstLine does not require user accounts. You can access and use most features of the Service without registration. Should we introduce account features in the future, separate terms regarding account creation, security, and termination will be provided."
+    },
+    "userConduct": {
+      "title": "3. User Conduct",
+      "paragraph1": "You agree to use the Service only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the Service. Prohibited behavior includes harassing or causing distress or inconvenience to any person, transmitting obscene or offensive content, or disrupting the normal flow of dialogue within the Service.",
+      "paragraph2": "Specifically, you agree not to:",
+      "list1": "Upload any images that are illegal, harmful, threatening, abusive, defamatory, obscene, hateful, racially or ethnically objectionable, or otherwise inappropriate.",
+      "list2": "Upload images that infringe upon any intellectual property rights, privacy rights, or publicity rights of any third party.",
+      "list3": "Use the Service for any commercial purposes without our express written consent.",
+      "list4": "Attempt to gain unauthorized access to any portion or feature of the Service, or any other systems or networks connected to the Service."
+    },
+    "intellectualProperty": {
+      "title": "4. Intellectual Property",
+      "paragraph": "The Service and its original content (excluding content provided by users), features, and functionality are and will remain the exclusive property of FirstLine and its licensors. The Service is protected by copyright, trademark, and other laws of both the [Your Country] and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of FirstLine."
+    },
+    "userContent": {
+      "title": "5. User-Generated Content (Uploaded Photos)",
+      "paragraph1": "You retain all rights to any photos you upload to the Service. By uploading a photo, you grant FirstLine a temporary, non-exclusive, royalty-free, worldwide license to use, reproduce, process, and display that photo solely for the purpose of providing the AI analysis and presenting the result to you. As stated in our Privacy Policy, uploaded photos are NOT stored on our servers after analysis and are immediately discarded.",
+      "paragraph2": "You represent and warrant that you own or have the necessary licenses, rights, consents, and permissions to upload the photos you submit to the Service and to grant the license described herein."
+    },
+    "disclaimerOfWarranties": {
+      "title": "6. Disclaimer of Warranties",
+      "paragraph": "Your use of the Service is at your sole risk. The Service is provided on an \"AS IS\" and \"AS AVAILABLE\" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance."
+    },
+    "limitationOfLiability": {
+      "title": "7. Limitation of Liability",
+      "paragraph": "In no event shall FirstLine, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose."
+    },
+    "indemnification": {
+      "title": "8. Indemnification",
+      "paragraph": "You agree to defend, indemnify and hold harmless FirstLine and its licensee and licensors, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees), resulting from or arising out of a) your use and access of the Service, by you or any person using your account and password; b) a breach of these Terms, or c) Content posted on the Service."
+    },
+    "termination": {
+      "title": "9. Termination",
+      "paragraph": "We may terminate or suspend your access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability."
+    },
+    "governingLaw": {
+      "title": "10. Governing Law",
+      "paragraph": "These Terms shall be governed and construed in accordance with the laws of [Your Country], without regard to its conflict of law provisions."
+    },
+    "changesToTerms": {
+      "title": "11. Changes to These Terms",
+      "paragraph": "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service."
+    },
+    "contact": {
+      "title": "12. Contact Us",
+      "paragraph": "If you have any questions about these Terms, please contact us:",
+      "email": "By email: 1974mds@gmail.com"
+    }
   },
   "phrases": {
     "phrase1": {

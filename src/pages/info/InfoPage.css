@@ -23,7 +23,107 @@
   color: var(--text-color-secondary);
 }
 
+.faq-section {
+  margin-bottom: 3rem;
+}
+
+.faq-section h2 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.faq-item {
+  background-color: var(--background-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: inset 2px 2px 5px var(--shadow-dark), inset -2px -2px 5px var(--shadow-light);
+  text-align: left;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  color: var(--text-color-secondary);
+  line-height: 1.5;
+}
+
+.help-topics-list {
+  margin-top: 3rem;
+}
+
+.help-topics-list h2 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.help-topic-item {
+  background-color: var(--component-background);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 7px 7px 14px var(--shadow-dark), -7px -7px 14px var(--shadow-light);
+  text-align: left;
+}
+
+.help-topic-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.help-topic-item h3 a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.help-topic-item h3 a:hover {
+  color: var(--primary-color);
+}
+
+.help-topic-item p {
+  font-size: 0.9rem;
+  color: var(--text-color-secondary);
+  line-height: 1.4;
+}
+
+.contact-support-text {
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.contact-email-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+
 /* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .info-page-container {
     margin-top: 120px; /* More space for stacked utility buttons */
@@ -40,3 +140,4 @@
     font-size: 0.9rem;
   }
 }
+
